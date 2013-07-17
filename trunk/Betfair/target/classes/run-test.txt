@@ -1,0 +1,18 @@
+
+Example of a Maven profile:
+
+			<properties>
+				<env>dev</env>
+				<user.username>username</user.username>
+				<user.password>password</user.password>
+				<grid2.hub>http://hub_ip/wd/hub</grid2.hub>
+				<site.url>http://app.bsq.openbet/drupal7</site.url>
+				<browser.name>firefox</browser.name>
+				<browser.version>15.0.1</browser.version>
+				<browser.platform>WINDOWS</browser.platform>
+			</properties>
+
+
+To run the tests based on a certain profile, we should run the following command from the location of pom.xml:
+
+mvn clean compile verify -Pdev

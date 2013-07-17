@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="49" failed="0" total="49" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests" duration-ms="76079" started-at="2013-06-25T15:07:25Z" finished-at="2013-06-25T15:08:41Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="76079" started-at="2013-06-25T15:07:25Z" finished-at="2013-06-25T15:08:41Z">
+      <class name="betfair.pages.FundsTransferEndToEndTest">
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="fundsTransferEndtoEnd()[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="fundsTransferEndtoEnd" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C201986 - Funds transfer - Betfair wallet" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundsTransferEndtoEnd -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.FundsTransferEndToEndTest@63d64969]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.FundsTransferEndToEndTest -->
+      <class name="betfair.pages.ModifyEvents">
+        <test-method status="FAIL" signature="init()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:07:25Z" finished-at="2013-06-25T16:07:25Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: '2.30.0', revision: 'dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7', time: '2013-02-19 09:14:38'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: '2.30.0', revision: 'dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7', time: '2013-02-19 09:14:38'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:87)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:95)
+	at betfair.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:123)
+	at betfair.pages.TestBase.init(TestBase.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: '2.30.0', revision: 'dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7', time: '2013-02-19 09:14:38'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:57)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:51)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:213)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="modifyFootballEvent()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyFootballEvent" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141955 - Modify a Football Event and view changes in View Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyFootballEvent -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="modifyFootballMarket()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyFootballMarket" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141954 - Modify a Football Market and view changes in View Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyFootballMarket -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="modifyFootballSelection()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyFootballSelection" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141953 Modify a Football Selection and view changes in View Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyFootballSelection -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="modifyHorseRacingEvent()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyHorseRacingEvent" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141968 - Modify an HR Event and view changes in View Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyHorseRacingEvent -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="modifyHorseRacingMarket()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyHorseRacingMarket" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141967 - Modify an HR Market to EachWay and view changes in Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyHorseRacingMarket -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="modifyHorseRacingSelection()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="modifyHorseRacingSelection" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141966 Modify a HR Selection and view changes in View Audit History" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyHorseRacingSelection -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.ModifyEvents@6dbac50f]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.ModifyEvents -->
+      <class name="betfair.pages.BirEndToEndTest">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="birEndToEndTest()[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="birEndToEndTest" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C207483 - BIR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- birEndToEndTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.BirEndToEndTest@2d3d0953]" name="tearDown" is-config="true" duration-ms="1" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.BirEndToEndTest -->
+      <class name="betfair.pages.SearchBetTest">
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="searchBetReceipt()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="searchBetReceipt" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C93962 - Find Bets with Receipt like" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBetReceipt -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="searchBetUsername()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="searchBetUsername" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141958 - Find Bets with Username like" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBetUsername -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.SearchBetTest@2684c71b]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.SearchBetTest -->
+      <class name="betfair.pages.DbPublishTest">
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getClasses()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getClasses" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244605 - getClasses" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClasses -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getEventDetailsHR()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getEventDetailsHR" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C244606 - getEventDetailsHR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventDetailsHR -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getEventDetailsFootball()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getEventDetailsFootball" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244607 - getEventDetailsFootball" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventDetailsFootball -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="getTypesByClassHR()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getTypesByClassHR" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244608 - getTypesByClassHR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTypesByClassHR -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getTypesByClassFootball()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getTypesByClassFootball" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C244609 - getTypesByClassFootball" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTypesByClassFootball -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getResultsByEventHR()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getResultsByEventHR" duration-ms="4" started-at="2013-06-25T16:08:41Z" description="C244610 - getResultsByEventHR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResultsByEventHR -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="getResultsByEventFootball()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getResultsByEventFootball" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C244611 - getResultsByEventFootball" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResultsByEventFootball -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="getEventsByType()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getEventsByType" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C244612 - getEventsByType" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventsByType -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getEventsHR()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getEventsHR" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C244613 - getEventsHR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventsHR -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="getEventsFootball()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getEventsFootball" duration-ms="7" started-at="2013-06-25T16:08:41Z" description="C244614 - getEventsFootball" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventsFootball -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="getOutcomeDetailsHR()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getOutcomeDetailsHR" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244615 - getOutcomeDetailsHR" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOutcomeDetailsHR -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="getOutcomeDetailsFootball()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="getOutcomeDetailsFootball" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244616 - getOutcomeDetailsFootball" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOutcomeDetailsFootball -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="status()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="status" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C244617 - status" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.DbPublishTest@5059a6b5]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.DbPublishTest -->
+      <class name="betfair.pages.OxiXmlTest">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqTransGetBetDetail()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqTransGetBetDetail" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217760 - reqTransGetBetDetail" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqTransGetBetDetail -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqTransGetBetDetails()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqTransGetBetDetails" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217759 - reqTransGetBetDetails" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqTransGetBetDetails -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="reqAccountAddStub()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqAccountAddStub" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217757 - reqAccountAddStub" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqAccountAddStub -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqAcctGetFreebets()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqAcctGetFreebets" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217761 - reqAcctGetFreebets" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqAcctGetFreebets -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqUtilPing()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqUtilPing" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217761 - reqUtilPing" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqUtilPing -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqFreebetTrigger()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqFreebetTrigger" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217758 - reqFreebetTrigger" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqFreebetTrigger -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqBetCashout()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="reqBetCashout" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C217764 - reqBetCashout" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.OxiXmlTest@20197522]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.OxiXmlTest -->
+      <class name="betfair.pages.CreateEventsTest">
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="createEnglishFootballEvent()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="createEnglishFootballEvent" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141950 - Create an English Football Event" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnglishFootballEvent -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="createHorseRacingEvent()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="createHorseRacingEvent" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141963 - Create a Horse Racing Event" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createHorseRacingEvent -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.CreateEventsTest@df9411]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.CreateEventsTest -->
+      <class name="betfair.pages.WinLoseVoidTest">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="setResults()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="setResults" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C141956 - Set results (Win, Lose and Void) for a selections and settle Market" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResults -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="unsetResults()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="unsetResults" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141957	- Unsettle market" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsetResults -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.WinLoseVoidTest@2dcfde49]" name="tearDown" is-config="true" duration-ms="1" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.WinLoseVoidTest -->
+      <class name="betfair.pages.PlaceBetEndtoEndTest">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="placeBetEndtoEndHR()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="placeBetEndtoEndHR" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C201985 - Place bet - Horse Racing" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeBetEndtoEndHR -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="placeBetEndtoEndFootball()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="placeBetEndtoEndFootball" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C201990 - Place bet - Football" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeBetEndtoEndFootball -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.PlaceBetEndtoEndTest@572bd15e]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.PlaceBetEndtoEndTest -->
+      <class name="betfair.pages.SearchCustomerTest">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="searchCustomerUsername()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="searchCustomerUsername" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141960 - Search for a Customer with their Username" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerUsername -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="searchCustomerAccount()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="searchCustomerAccount" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C141961	- Search for a Customer with their Account No" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerAccount -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.SearchCustomerTest@3a333bdb]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.SearchCustomerTest -->
+      <class name="betfair.pages.CashoutExceptions">
+        <test-method status="SKIP" signature="init()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="init" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="classInit()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="classInit" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classInit -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_VALUE_TOO_HIGH()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_VALUE_TOO_HIGH" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227807 - CASHOUT_VALUE_TOO_HIGH" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_VALUE_TOO_HIGH -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227808 - CASHOUT_OUTCOME_NOT_RESULTED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227809 - CASHOUT_BET_ALREADY_SETTLED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_BET_ALREADY_SETTLED -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_RESULTED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_RESULTED" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C227810 - CASHOUT_OUTCOME_RESULTED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_RESULTED -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C227811 - CASHOUT_OUTCOME_NOT_BETABLE" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_BETABLE()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_BETABLE" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C227812 - CASHOUT_OUTCOME_BETABLE" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_BETABLE -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227813 - CASHOUT_OUTCOME_PRICE_CHANGED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_INVALID_EXPECTATION()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_INVALID_EXPECTATION" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227814 - CASHOUT_INVALID_EXPECTATION" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_INVALID_EXPECTATION -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227815 - CASHOUT_OUTCOME_PRICE_NOT_PROVIDED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="C227816 - CASHOUT_OUTCOME_HANDICAP_CHANGED" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="SKIP" signature="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY" duration-ms="1" started-at="2013-06-25T16:08:41Z" description="C227817 - CASHOUT_OUTCOME_PRICE_EMPTY" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY -->
+        <test-method status="SKIP" signature="startTest(java.lang.reflect.Method)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="startTest" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="login" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs in before method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="logout(org.testng.ITestResult)[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="logout" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" description="Logs out after method" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:betfair.pages.CashoutExceptions@58d3d0d4]" name="tearDown" is-config="true" duration-ms="0" started-at="2013-06-25T16:08:41Z" finished-at="2013-06-25T16:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- betfair.pages.CashoutExceptions -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
+</testng-results>

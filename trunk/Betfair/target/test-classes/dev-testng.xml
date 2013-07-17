@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="2" data-provider-thread-count="10"
+	parallel="false">
+	<test name="Test1">
+		<classes>
+			<class name="betfair.pages.ModifyEvents">
+				<methods>
+					<include name="modifyFootballEvent"></include>
+					<include name="modifyFootballMarket"></include>
+					<include name="modifyFootballSelection"></include>
+					<include name="modifyHorseRacingEvent"></include>
+					<include name="modifyHorseRacingMarket"></include>
+					<include name="modifyHorseRacingSelection"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.SearchBetTest">
+				<methods>
+					<include name="searchBetReceipt"></include>
+					<include name="searchBetUsername"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.CreateEventsTest">
+				<methods>
+					<include name="createEnglishFootballEvent"></include>
+					<include name="createHorseRacingEvent"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.SearchCustomerTest">
+				<methods>
+					<include name="searchCustomerUsername"></include>
+					<include name="searchCustomerAccount"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.WinLoseVoidTest">
+				<methods>
+					<include name="setResults"></include>
+					<include name="unsetResults"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.PlaceBetEndtoEndTest">
+				<methods>
+					<include name="placeBetEndtoEndHR"></include>
+					<include name="placeBetEndtoEndFootball"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.FundsTransferEndToEndTest">
+				<methods>
+					<include name="fundsTransferEndtoEnd"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.BirEndToEndTest">
+				<methods>
+					<include name="birEndToEndTest"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.OxiXmlTest">
+				<methods>
+					<include name="reqTransGetBetDetail"></include>
+					<include name="reqTransGetBetDetails"></include>
+					<include name="reqAccountAddStub"></include>
+					<include name="reqAcctGetFreebets"></include>
+					<include name="reqUtilPing"></include>
+					<include name="reqFreebetTrigger"></include>
+					<include name="reqBetCashout"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.CashoutExceptions">
+				<methods>
+					<include name="reqBetCashout_CASHOUT_VALUE_TOO_HIGH"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED"></include>
+					<include name="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_RESULTED"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_BETABLE"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED"></include>
+					<include name="reqBetCashout_CASHOUT_INVALID_EXPECTATION"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED"></include>
+					<include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY"></include>
+				</methods>
+			</class>
+			<class name="betfair.pages.DbPublishTest">
+				<methods>
+					<include name="getClasses"></include>
+					<include name="getEventDetailsHR"></include>
+					<include name="getEventDetailsFootball"></include>
+					<include name="getTypesByClassHR"></include>
+					<include name="getTypesByClassFootball"></include>
+					<include name="getResultsByEventHR"></include>
+					<include name="getResultsByEventFootball"></include>
+					<include name="getEventsByType"></include>
+					<include name="getEventsHR"></include>
+					<include name="getEventsFootball"></include>
+					<include name="getOutcomeDetailsHR"></include>
+					<include name="getOutcomeDetailsFootball"></include>
+					<include name="status"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

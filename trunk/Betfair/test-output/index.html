@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Tests">
+              <span class="suite-name border-skipped">Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Tests">
+                    <span>C:\work\projects\Betfair\src\test\resources\dev-testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Tests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">49 methods,  49 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods skipped suite-Tests"> (hide)</a> <!-- hide-methods skipped suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods skipped suite-Tests"> (show)</a> <!-- show-methods skipped suite-Tests -->
+                    </span>
+                    <div class="method-list-content skipped suite-Tests">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.BirEndToEndTest" hash-for-method="birEndToEndTest">birEndToEndTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CreateEventsTest" hash-for-method="createEnglishFootballEvent">createEnglishFootballEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CreateEventsTest" hash-for-method="createHorseRacingEvent">createHorseRacingEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.FundsTransferEndToEndTest" hash-for-method="fundsTransferEndtoEnd">fundsTransferEndtoEnd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getClasses">getClasses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventDetailsFootball">getEventDetailsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventDetailsHR">getEventDetailsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsByType">getEventsByType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsFootball">getEventsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsHR">getEventsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getOutcomeDetailsFootball">getOutcomeDetailsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getOutcomeDetailsHR">getOutcomeDetailsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getResultsByEventFootball">getResultsByEventFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getResultsByEventHR">getResultsByEventHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getTypesByClassFootball">getTypesByClassFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getTypesByClassHR">getTypesByClassHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballEvent">modifyFootballEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballMarket">modifyFootballMarket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballSelection">modifyFootballSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingEvent">modifyHorseRacingEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingMarket">modifyHorseRacingMarket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingSelection">modifyHorseRacingSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.PlaceBetEndtoEndTest" hash-for-method="placeBetEndtoEndFootball">placeBetEndtoEndFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.PlaceBetEndtoEndTest" hash-for-method="placeBetEndtoEndHR">placeBetEndtoEndHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqAccountAddStub">reqAccountAddStub</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqAcctGetFreebets">reqAcctGetFreebets</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqBetCashout">reqBetCashout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_INVALID_EXPECTATION">reqBetCashout_CASHOUT_INVALID_EXPECTATION</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_BETABLE">reqBetCashout_CASHOUT_OUTCOME_BETABLE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_RESULTED">reqBetCashout_CASHOUT_OUTCOME_RESULTED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_VALUE_TOO_HIGH">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqFreebetTrigger">reqFreebetTrigger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqTransGetBetDetail">reqTransGetBetDetail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqTransGetBetDetails">reqTransGetBetDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqUtilPing">reqUtilPing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchBetTest" hash-for-method="searchBetReceipt">searchBetReceipt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchBetTest" hash-for-method="searchBetUsername">searchBetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchCustomerTest" hash-for-method="searchCustomerAccount">searchCustomerAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchCustomerTest" hash-for-method="searchCustomerUsername">searchCustomerUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.WinLoseVoidTest" hash-for-method="setResults">setResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="status">status</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.WinLoseVoidTest" hash-for-method="unsetResults">unsetResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tests" class="panel Tests">
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.BirEndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="birEndToEndTest">
+                  </a> <!-- birEndToEndTest -->
+                  <span class="method-name">birEndToEndTest</span>
+                  <em>
+(C207483 - BIR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.CashoutExceptions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED">
+                  </a> <!-- reqBetCashout_CASHOUT_BET_ALREADY_SETTLED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</span>
+                  <em>
+(C227809 - CASHOUT_BET_ALREADY_SETTLED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_INVALID_EXPECTATION">
+                  </a> <!-- reqBetCashout_CASHOUT_INVALID_EXPECTATION -->
+                  <span class="method-name">reqBetCashout_CASHOUT_INVALID_EXPECTATION</span>
+                  <em>
+(C227814 - CASHOUT_INVALID_EXPECTATION)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_BETABLE">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_BETABLE -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_BETABLE</span>
+                  <em>
+(C227812 - CASHOUT_OUTCOME_BETABLE)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</span>
+                  <em>
+(C227816 - CASHOUT_OUTCOME_HANDICAP_CHANGED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</span>
+                  <em>
+(C227811 - CASHOUT_OUTCOME_NOT_BETABLE)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</span>
+                  <em>
+(C227808 - CASHOUT_OUTCOME_NOT_RESULTED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</span>
+                  <em>
+(C227813 - CASHOUT_OUTCOME_PRICE_CHANGED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</span>
+                  <em>
+(C227817 - CASHOUT_OUTCOME_PRICE_EMPTY)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</span>
+                  <em>
+(C227815 - CASHOUT_OUTCOME_PRICE_NOT_PROVIDED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_RESULTED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_RESULTED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_RESULTED</span>
+                  <em>
+(C227810 - CASHOUT_OUTCOME_RESULTED)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_VALUE_TOO_HIGH">
+                  </a> <!-- reqBetCashout_CASHOUT_VALUE_TOO_HIGH -->
+                  <span class="method-name">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</span>
+                  <em>
+(C227807 - CASHOUT_VALUE_TOO_HIGH)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.SearchCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomerAccount">
+                  </a> <!-- searchCustomerAccount -->
+                  <span class="method-name">searchCustomerAccount</span>
+                  <em>
+(C141961	- Search for a Customer with their Account No)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomerUsername">
+                  </a> <!-- searchCustomerUsername -->
+                  <span class="method-name">searchCustomerUsername</span>
+                  <em>
+(C141960 - Search for a Customer with their Username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.SearchBetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBetReceipt">
+                  </a> <!-- searchBetReceipt -->
+                  <span class="method-name">searchBetReceipt</span>
+                  <em>
+(C93962 - Find Bets with Receipt like)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBetUsername">
+                  </a> <!-- searchBetUsername -->
+                  <span class="method-name">searchBetUsername</span>
+                  <em>
+(C141958 - Find Bets with Username like)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.PlaceBetEndtoEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeBetEndtoEndFootball">
+                  </a> <!-- placeBetEndtoEndFootball -->
+                  <span class="method-name">placeBetEndtoEndFootball</span>
+                  <em>
+(C201990 - Place bet - Football)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeBetEndtoEndHR">
+                  </a> <!-- placeBetEndtoEndHR -->
+                  <span class="method-name">placeBetEndtoEndHR</span>
+                  <em>
+(C201985 - Place bet - Horse Racing)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.ModifyEvents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballEvent">
+                  </a> <!-- modifyFootballEvent -->
+                  <span class="method-name">modifyFootballEvent</span>
+                  <em>
+(C141955 - Modify a Football Event and view changes in View Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballMarket">
+                  </a> <!-- modifyFootballMarket -->
+                  <span class="method-name">modifyFootballMarket</span>
+                  <em>
+(C141954 - Modify a Football Market and view changes in View Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballSelection">
+                  </a> <!-- modifyFootballSelection -->
+                  <span class="method-name">modifyFootballSelection</span>
+                  <em>
+(C141953 Modify a Football Selection and view changes in View Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingEvent">
+                  </a> <!-- modifyHorseRacingEvent -->
+                  <span class="method-name">modifyHorseRacingEvent</span>
+                  <em>
+(C141968 - Modify an HR Event and view changes in View Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingMarket">
+                  </a> <!-- modifyHorseRacingMarket -->
+                  <span class="method-name">modifyHorseRacingMarket</span>
+                  <em>
+(C141967 - Modify an HR Market to EachWay and view changes in Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingSelection">
+                  </a> <!-- modifyHorseRacingSelection -->
+                  <span class="method-name">modifyHorseRacingSelection</span>
+                  <em>
+(C141966 Modify a HR Selection and view changes in View Audit History)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.CreateEventsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createEnglishFootballEvent">
+                  </a> <!-- createEnglishFootballEvent -->
+                  <span class="method-name">createEnglishFootballEvent</span>
+                  <em>
+(C141950 - Create an English Football Event)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createHorseRacingEvent">
+                  </a> <!-- createHorseRacingEvent -->
+                  <span class="method-name">createHorseRacingEvent</span>
+                  <em>
+(C141963 - Create a Horse Racing Event)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.DbPublishTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClasses">
+                  </a> <!-- getClasses -->
+                  <span class="method-name">getClasses</span>
+                  <em>
+(C244605 - getClasses)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventDetailsFootball">
+                  </a> <!-- getEventDetailsFootball -->
+                  <span class="method-name">getEventDetailsFootball</span>
+                  <em>
+(C244607 - getEventDetailsFootball)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventDetailsHR">
+                  </a> <!-- getEventDetailsHR -->
+                  <span class="method-name">getEventDetailsHR</span>
+                  <em>
+(C244606 - getEventDetailsHR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsByType">
+                  </a> <!-- getEventsByType -->
+                  <span class="method-name">getEventsByType</span>
+                  <em>
+(C244612 - getEventsByType)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsFootball">
+                  </a> <!-- getEventsFootball -->
+                  <span class="method-name">getEventsFootball</span>
+                  <em>
+(C244614 - getEventsFootball)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsHR">
+                  </a> <!-- getEventsHR -->
+                  <span class="method-name">getEventsHR</span>
+                  <em>
+(C244613 - getEventsHR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOutcomeDetailsFootball">
+                  </a> <!-- getOutcomeDetailsFootball -->
+                  <span class="method-name">getOutcomeDetailsFootball</span>
+                  <em>
+(C244616 - getOutcomeDetailsFootball)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOutcomeDetailsHR">
+                  </a> <!-- getOutcomeDetailsHR -->
+                  <span class="method-name">getOutcomeDetailsHR</span>
+                  <em>
+(C244615 - getOutcomeDetailsHR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResultsByEventFootball">
+                  </a> <!-- getResultsByEventFootball -->
+                  <span class="method-name">getResultsByEventFootball</span>
+                  <em>
+(C244611 - getResultsByEventFootball)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResultsByEventHR">
+                  </a> <!-- getResultsByEventHR -->
+                  <span class="method-name">getResultsByEventHR</span>
+                  <em>
+(C244610 - getResultsByEventHR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTypesByClassFootball">
+                  </a> <!-- getTypesByClassFootball -->
+                  <span class="method-name">getTypesByClassFootball</span>
+                  <em>
+(C244609 - getTypesByClassFootball)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTypesByClassHR">
+                  </a> <!-- getTypesByClassHR -->
+                  <span class="method-name">getTypesByClassHR</span>
+                  <em>
+(C244608 - getTypesByClassHR)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="status">
+                  </a> <!-- status -->
+                  <span class="method-name">status</span>
+                  <em>
+(C244617 - status)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.OxiXmlTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqAccountAddStub">
+                  </a> <!-- reqAccountAddStub -->
+                  <span class="method-name">reqAccountAddStub</span>
+                  <em>
+(C217757 - reqAccountAddStub)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqAcctGetFreebets">
+                  </a> <!-- reqAcctGetFreebets -->
+                  <span class="method-name">reqAcctGetFreebets</span>
+                  <em>
+(C217761 - reqAcctGetFreebets)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout">
+                  </a> <!-- reqBetCashout -->
+                  <span class="method-name">reqBetCashout</span>
+                  <em>
+(C217764 - reqBetCashout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqFreebetTrigger">
+                  </a> <!-- reqFreebetTrigger -->
+                  <span class="method-name">reqFreebetTrigger</span>
+                  <em>
+(C217758 - reqFreebetTrigger)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqTransGetBetDetail">
+                  </a> <!-- reqTransGetBetDetail -->
+                  <span class="method-name">reqTransGetBetDetail</span>
+                  <em>
+(C217760 - reqTransGetBetDetail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqTransGetBetDetails">
+                  </a> <!-- reqTransGetBetDetails -->
+                  <span class="method-name">reqTransGetBetDetails</span>
+                  <em>
+(C217759 - reqTransGetBetDetails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqUtilPing">
+                  </a> <!-- reqUtilPing -->
+                  <span class="method-name">reqUtilPing</span>
+                  <em>
+(C217761 - reqUtilPing)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.WinLoseVoidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setResults">
+                  </a> <!-- setResults -->
+                  <span class="method-name">setResults</span>
+                  <em>
+(C141956 - Set results (Win, Lose and Void) for a selections and settle Market)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unsetResults">
+                  </a> <!-- unsetResults -->
+                  <span class="method-name">unsetResults</span>
+                  <em>
+(C141957	- Unsettle market)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.FundsTransferEndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fundsTransferEndtoEnd">
+                  </a> <!-- fundsTransferEndtoEnd -->
+                  <span class="method-name">fundsTransferEndtoEnd</span>
+                  <em>
+(C201986 - Funds transfer - Betfair wallet)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+        </div> <!-- panel Tests -->
+        <div panel-name="test-xml-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\work\projects\Betfair\src\test\resources\dev-testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;2&quot; name=&quot;Tests&quot;&gt;
+  &lt;test name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;betfair.pages.ModifyEvents&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;modifyFootballEvent&quot;/&gt;
+          &lt;include name=&quot;modifyFootballMarket&quot;/&gt;
+          &lt;include name=&quot;modifyFootballSelection&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingEvent&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingMarket&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingSelection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.ModifyEvents --&gt;
+      &lt;class name=&quot;betfair.pages.SearchBetTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchBetReceipt&quot;/&gt;
+          &lt;include name=&quot;searchBetUsername&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.SearchBetTest --&gt;
+      &lt;class name=&quot;betfair.pages.CreateEventsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createEnglishFootballEvent&quot;/&gt;
+          &lt;include name=&quot;createHorseRacingEvent&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.CreateEventsTest --&gt;
+      &lt;class name=&quot;betfair.pages.SearchCustomerTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchCustomerUsername&quot;/&gt;
+          &lt;include name=&quot;searchCustomerAccount&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.SearchCustomerTest --&gt;
+      &lt;class name=&quot;betfair.pages.WinLoseVoidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setResults&quot;/&gt;
+          &lt;include name=&quot;unsetResults&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.WinLoseVoidTest --&gt;
+      &lt;class name=&quot;betfair.pages.PlaceBetEndtoEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;placeBetEndtoEndHR&quot;/&gt;
+          &lt;include name=&quot;placeBetEndtoEndFootball&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.PlaceBetEndtoEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.FundsTransferEndToEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;fundsTransferEndtoEnd&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.FundsTransferEndToEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.BirEndToEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;birEndToEndTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.BirEndToEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.OxiXmlTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;reqTransGetBetDetail&quot;/&gt;
+          &lt;include name=&quot;reqTransGetBetDetails&quot;/&gt;
+          &lt;include name=&quot;reqAccountAddStub&quot;/&gt;
+          &lt;include name=&quot;reqAcctGetFreebets&quot;/&gt;
+          &lt;include name=&quot;reqUtilPing&quot;/&gt;
+          &lt;include name=&quot;reqFreebetTrigger&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.OxiXmlTest --&gt;
+      &lt;class name=&quot;betfair.pages.CashoutExceptions&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_VALUE_TOO_HIGH&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_BET_ALREADY_SETTLED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_RESULTED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_BETABLE&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_INVALID_EXPECTATION&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.CashoutExceptions --&gt;
+      &lt;class name=&quot;betfair.pages.DbPublishTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getClasses&quot;/&gt;
+          &lt;include name=&quot;getEventDetailsHR&quot;/&gt;
+          &lt;include name=&quot;getEventDetailsFootball&quot;/&gt;
+          &lt;include name=&quot;getTypesByClassHR&quot;/&gt;
+          &lt;include name=&quot;getTypesByClassFootball&quot;/&gt;
+          &lt;include name=&quot;getResultsByEventHR&quot;/&gt;
+          &lt;include name=&quot;getResultsByEventFootball&quot;/&gt;
+          &lt;include name=&quot;getEventsByType&quot;/&gt;
+          &lt;include name=&quot;getEventsHR&quot;/&gt;
+          &lt;include name=&quot;getEventsFootball&quot;/&gt;
+          &lt;include name=&quot;getOutcomeDetailsHR&quot;/&gt;
+          &lt;include name=&quot;getOutcomeDetailsFootball&quot;/&gt;
+          &lt;include name=&quot;status&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.DbPublishTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+&lt;/suite&gt; &lt;!-- Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tests');
+function tableData_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(49);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getEventsFootball')
+data.setCell(0, 2, 'betfair.pages.DbPublishTest')
+data.setCell(0, 3, 7);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getResultsByEventHR')
+data.setCell(1, 2, 'betfair.pages.DbPublishTest')
+data.setCell(1, 3, 4);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchCustomerUsername')
+data.setCell(2, 2, 'betfair.pages.SearchCustomerTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'modifyHorseRacingSelection')
+data.setCell(3, 2, 'betfair.pages.ModifyEvents')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'placeBetEndtoEndHR')
+data.setCell(4, 2, 'betfair.pages.PlaceBetEndtoEndTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'reqBetCashout_CASHOUT_OUTCOME_BETABLE')
+data.setCell(5, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'reqBetCashout_CASHOUT_OUTCOME_RESULTED')
+data.setCell(6, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE')
+data.setCell(7, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getResultsByEventFootball')
+data.setCell(8, 2, 'betfair.pages.DbPublishTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getTypesByClassFootball')
+data.setCell(9, 2, 'betfair.pages.DbPublishTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'searchBetUsername')
+data.setCell(10, 2, 'betfair.pages.SearchBetTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'birEndToEndTest')
+data.setCell(11, 2, 'betfair.pages.BirEndToEndTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'unsetResults')
+data.setCell(12, 2, 'betfair.pages.WinLoseVoidTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getEventsByType')
+data.setCell(13, 2, 'betfair.pages.DbPublishTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createHorseRacingEvent')
+data.setCell(14, 2, 'betfair.pages.CreateEventsTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'modifyHorseRacingEvent')
+data.setCell(15, 2, 'betfair.pages.ModifyEvents')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getEventsHR')
+data.setCell(16, 2, 'betfair.pages.DbPublishTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'searchBetReceipt')
+data.setCell(17, 2, 'betfair.pages.SearchBetTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY')
+data.setCell(18, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'searchCustomerAccount')
+data.setCell(19, 2, 'betfair.pages.SearchCustomerTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'getEventDetailsHR')
+data.setCell(20, 2, 'betfair.pages.DbPublishTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'modifyHorseRacingMarket')
+data.setCell(21, 2, 'betfair.pages.ModifyEvents')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'setResults')
+data.setCell(22, 2, 'betfair.pages.WinLoseVoidTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'fundsTransferEndtoEnd')
+data.setCell(23, 2, 'betfair.pages.FundsTransferEndToEndTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'modifyFootballSelection')
+data.setCell(24, 2, 'betfair.pages.ModifyEvents')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED')
+data.setCell(25, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'reqAcctGetFreebets')
+data.setCell(26, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED')
+data.setCell(27, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'placeBetEndtoEndFootball')
+data.setCell(28, 2, 'betfair.pages.PlaceBetEndtoEndTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'modifyFootballEvent')
+data.setCell(29, 2, 'betfair.pages.ModifyEvents')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'reqBetCashout_CASHOUT_INVALID_EXPECTATION')
+data.setCell(30, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getClasses')
+data.setCell(31, 2, 'betfair.pages.DbPublishTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'reqTransGetBetDetail')
+data.setCell(32, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'status')
+data.setCell(33, 2, 'betfair.pages.DbPublishTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED')
+data.setCell(34, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'reqAccountAddStub')
+data.setCell(35, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'reqBetCashout_CASHOUT_BET_ALREADY_SETTLED')
+data.setCell(36, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'createEnglishFootballEvent')
+data.setCell(37, 2, 'betfair.pages.CreateEventsTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'modifyFootballMarket')
+data.setCell(38, 2, 'betfair.pages.ModifyEvents')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'reqUtilPing')
+data.setCell(39, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'getOutcomeDetailsFootball')
+data.setCell(40, 2, 'betfair.pages.DbPublishTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'getOutcomeDetailsHR')
+data.setCell(41, 2, 'betfair.pages.DbPublishTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'getEventDetailsFootball')
+data.setCell(42, 2, 'betfair.pages.DbPublishTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED')
+data.setCell(43, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'reqTransGetBetDetails')
+data.setCell(44, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'reqBetCashout_CASHOUT_VALUE_TOO_HIGH')
+data.setCell(45, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'reqFreebetTrigger')
+data.setCell(46, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'getTypesByClassHR')
+data.setCell(47, 2, 'betfair.pages.DbPublishTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'reqBetCashout')
+data.setCell(48, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(48, 3, 0);
+window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 30 ms</span>
+              <div id="times-div-Tests">
+              </div> <!-- times-div-Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">betfair.pages.OxiXmlTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reqBetStatus</span>
+                <br/>
+                <span class="ignored-method-name">reqGetLanguages</span>
+                <br/>
+                <span class="ignored-method-name">reqBetBuild</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.ModifyEvents</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">modifyFootballEvent</span>
+                <span class="method-start">75872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyFootballMarket</span>
+                <span class="method-start">75876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyFootballSelection</span>
+                <span class="method-start">75879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyHorseRacingEvent</span>
+                <span class="method-start">75881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyHorseRacingMarket</span>
+                <span class="method-start">75884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyHorseRacingSelection</span>
+                <span class="method-start">75887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75889 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.SearchBetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchBetReceipt</span>
+                <span class="method-start">75893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchBetUsername</span>
+                <span class="method-start">75896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75898 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.CreateEventsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createEnglishFootballEvent</span>
+                <span class="method-start">75901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createHorseRacingEvent</span>
+                <span class="method-start">75903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75904 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.SearchCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchCustomerUsername</span>
+                <span class="method-start">75908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchCustomerAccount</span>
+                <span class="method-start">75910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75911 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.WinLoseVoidTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setResults</span>
+                <span class="method-start">75914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unsetResults</span>
+                <span class="method-start">75916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75917 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.PlaceBetEndtoEndTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">placeBetEndtoEndHR</span>
+                <span class="method-start">75920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">placeBetEndtoEndFootball</span>
+                <span class="method-start">75923 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75924 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.FundsTransferEndToEndTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fundsTransferEndtoEnd</span>
+                <span class="method-start">75927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75928 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.BirEndToEndTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">birEndToEndTest</span>
+                <span class="method-start">75930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75931 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.OxiXmlTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reqTransGetBetDetail</span>
+                <span class="method-start">75934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqTransGetBetDetails</span>
+                <span class="method-start">75938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqAccountAddStub</span>
+                <span class="method-start">75940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqAcctGetFreebets</span>
+                <span class="method-start">75943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqUtilPing</span>
+                <span class="method-start">75945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqFreebetTrigger</span>
+                <span class="method-start">75947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout</span>
+                <span class="method-start">75949 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75954 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.CashoutExceptions</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</span>
+                <span class="method-start">75956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</span>
+                <span class="method-start">75958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</span>
+                <span class="method-start">75968 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_RESULTED</span>
+                <span class="method-start">75975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</span>
+                <span class="method-start">75978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_BETABLE</span>
+                <span class="method-start">75980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</span>
+                <span class="method-start">75982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_INVALID_EXPECTATION</span>
+                <span class="method-start">75996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</span>
+                <span class="method-start">75998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</span>
+                <span class="method-start">76000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</span>
+                <span class="method-start">76002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76005 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.DbPublishTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getClasses</span>
+                <span class="method-start">76010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventDetailsHR</span>
+                <span class="method-start">76013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventDetailsFootball</span>
+                <span class="method-start">76015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTypesByClassHR</span>
+                <span class="method-start">76017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTypesByClassFootball</span>
+                <span class="method-start">76024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getResultsByEventHR</span>
+                <span class="method-start">76026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getResultsByEventFootball</span>
+                <span class="method-start">76032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsByType</span>
+                <span class="method-start">76034 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsHR</span>
+                <span class="method-start">76037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsFootball</span>
+                <span class="method-start">76039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOutcomeDetailsHR</span>
+                <span class="method-start">76047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOutcomeDetailsFootball</span>
+                <span class="method-start">76051 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">status</span>
+                <span class="method-start">76053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76065 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

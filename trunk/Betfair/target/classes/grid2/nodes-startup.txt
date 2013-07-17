@@ -1,0 +1,8 @@
+Hub startup:
+
+java -jar selenium-server-standalone-2-1.30.0.jar -role hub -hubConfig server.json
+
+Node startup:
+
+java -jar selenium-server-standalone-2-1.30.0.jar -role node -nodeConfig node.json  -Dwebdriver.chrome.driver=chromedriver
+
