@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Tests">
+              <span class="suite-name border-failed">Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Tests">
+                    <span>C:\work\projects\Betfair\src\test\resources\dev-testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Tests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">49 methods, 6 failed,  31 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods failed suite-Tests"> (hide)</a> <!-- hide-methods failed suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods failed suite-Tests"> (show)</a> <!-- show-methods failed suite-Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.BirEndToEndTest" hash-for-method="birEndToEndTest">birEndToEndTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballEvent">modifyFootballEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingEvent">modifyHorseRacingEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.PlaceBetEndtoEndTest" hash-for-method="placeBetEndtoEndHR">placeBetEndtoEndHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchBetTest" hash-for-method="searchBetUsername">searchBetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.WinLoseVoidTest" hash-for-method="unsetResults">unsetResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods skipped suite-Tests"> (hide)</a> <!-- hide-methods skipped suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods skipped suite-Tests"> (show)</a> <!-- show-methods skipped suite-Tests -->
+                    </span>
+                    <div class="method-list-content skipped suite-Tests">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getClasses">getClasses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventDetailsFootball">getEventDetailsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventDetailsHR">getEventDetailsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsByType">getEventsByType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsFootball">getEventsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getEventsHR">getEventsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getOutcomeDetailsFootball">getOutcomeDetailsFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getOutcomeDetailsHR">getOutcomeDetailsHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getResultsByEventFootball">getResultsByEventFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getResultsByEventHR">getResultsByEventHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getTypesByClassFootball">getTypesByClassFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="getTypesByClassHR">getTypesByClassHR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqAccountAddStub">reqAccountAddStub</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqAcctGetFreebets">reqAcctGetFreebets</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqBetCashout">reqBetCashout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_INVALID_EXPECTATION">reqBetCashout_CASHOUT_INVALID_EXPECTATION</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_BETABLE">reqBetCashout_CASHOUT_OUTCOME_BETABLE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_OUTCOME_RESULTED">reqBetCashout_CASHOUT_OUTCOME_RESULTED</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CashoutExceptions" hash-for-method="reqBetCashout_CASHOUT_VALUE_TOO_HIGH">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqFreebetTrigger">reqFreebetTrigger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqTransGetBetDetail">reqTransGetBetDetail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqTransGetBetDetails">reqTransGetBetDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.OxiXmlTest" hash-for-method="reqUtilPing">reqUtilPing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.DbPublishTest" hash-for-method="status">status</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods passed suite-Tests"> (hide)</a> <!-- hide-methods passed suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods passed suite-Tests"> (show)</a> <!-- show-methods passed suite-Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CreateEventsTest" hash-for-method="createEnglishFootballEvent">createEnglishFootballEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.CreateEventsTest" hash-for-method="createHorseRacingEvent">createHorseRacingEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.FundsTransferEndToEndTest" hash-for-method="fundsTransferEndtoEnd">fundsTransferEndtoEnd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballMarket">modifyFootballMarket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyFootballSelection">modifyFootballSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingMarket">modifyHorseRacingMarket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.ModifyEvents" hash-for-method="modifyHorseRacingSelection">modifyHorseRacingSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.PlaceBetEndtoEndTest" hash-for-method="placeBetEndtoEndFootball">placeBetEndtoEndFootball</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchBetTest" hash-for-method="searchBetReceipt">searchBetReceipt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchCustomerTest" hash-for-method="searchCustomerAccount">searchCustomerAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.SearchCustomerTest" hash-for-method="searchCustomerUsername">searchCustomerUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="betfair.pages.WinLoseVoidTest" hash-for-method="setResults">setResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tests" class="panel Tests">
+          <div class="suite-Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">betfair.pages.WinLoseVoidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="unsetResults">
+                  </a> <!-- unsetResults -->
+                  <span class="method-name">unsetResults</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.click(Unknown Source)
+	at betfair.pages.AdminEventUnsettle.clickCategoryHorseRacing(AdminEventUnsettle.java:105)
+	at betfair.pages.WinLoseVoidTest.unsetResults(WinLoseVoidTest.java:147)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+... Removed 36 stack frames<br/> org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.click(Unknown Source)
+	at betfair.pages.AdminEventUnsettle.clickCategoryHorseRacing(AdminEventUnsettle.java:105)
+	at betfair.pages.WinLoseVoidTest.unsetResults(WinLoseVoidTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+	at java.lang.reflect.Method.invoke(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:525)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:344)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)<br>$Proxy9.click(Unknown Source)<br>betfair.pages.AdminEventUnsettle.clickCategoryHorseRacing(AdminEventUnsettle.java:105)<br>betfair.pages.WinLoseVoidTest.unsetResults(WinLoseVoidTest.java:147)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-failed -->
+          <div class="suite-Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">betfair.pages.BirEndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="birEndToEndTest">
+                  </a> <!-- birEndToEndTest -->
+                  <span class="method-name">birEndToEndTest</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.click(Unknown Source)
+	at betfair.pages.AdminMarketCreation.clickAddEventMarket(AdminMarketCreation.java:130)
+	at betfair.pages.BirEndToEndTest.birEndToEndTest(BirEndToEndTest.java:64)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+... Removed 36 stack frames<br/> org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.click(Unknown Source)
+	at betfair.pages.AdminMarketCreation.clickAddEventMarket(AdminMarketCreation.java:130)
+	at betfair.pages.BirEndToEndTest.birEndToEndTest(BirEndToEndTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+	at java.lang.reflect.Method.invoke(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:525)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:344)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)<br>$Proxy9.click(Unknown Source)<br>betfair.pages.AdminMarketCreation.clickAddEventMarket(AdminMarketCreation.java:130)<br>betfair.pages.BirEndToEndTest.birEndToEndTest(BirEndToEndTest.java:64)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-failed -->
+          <div class="suite-Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">betfair.pages.SearchBetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBetUsername">
+                  </a> <!-- searchBetUsername -->
+                  <span class="method-name">searchBetUsername</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.getText(Unknown Source)
+	at betfair.pages.AdminBetSearch.getReceipt(AdminBetSearch.java:95)
+	at betfair.pages.SearchBetTest.searchBetUsername(SearchBetTest.java:126)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+... Removed 36 stack frames<br/> org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy9.getText(Unknown Source)
+	at betfair.pages.AdminBetSearch.getReceipt(AdminBetSearch.java:95)
+	at betfair.pages.SearchBetTest.searchBetUsername(SearchBetTest.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+	at java.lang.reflect.Method.invoke(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy1.findElement(null)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:525)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:344)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)<br>$Proxy9.getText(Unknown Source)<br>betfair.pages.AdminBetSearch.getReceipt(AdminBetSearch.java:95)<br>betfair.pages.SearchBetTest.searchBetUsername(SearchBetTest.java:126)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-failed -->
+          <div class="suite-Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">betfair.pages.ModifyEvents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballEvent">
+                  </a> <!-- modifyFootballEvent -->
+                  <span class="method-name">modifyFootballEvent</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [2014-06-27 11:53:37 ] but found [2016-01-01 00:00:00 ]
+	at betfair.pages.ModifyEvents.modifyFootballEvent(ModifyEvents.java:71)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+... Removed 30 stack frames<br/> java.lang.AssertionError: expected [2014-06-27 11:53:37 ] but found [2016-01-01 00:00:00 ]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at betfair.pages.ModifyEvents.modifyFootballEvent(ModifyEvents.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>betfair.pages.ModifyEvents.modifyFootballEvent(ModifyEvents.java:71)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingEvent">
+                  </a> <!-- modifyHorseRacingEvent -->
+                  <span class="method-name">modifyHorseRacingEvent</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [2014-06-27 11:54:35 ] but found [2016-01-01 00:00:00 ]
+	at betfair.pages.ModifyEvents.modifyHorseRacingEvent(ModifyEvents.java:176)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+... Removed 30 stack frames<br/> java.lang.AssertionError: expected [2014-06-27 11:54:35 ] but found [2016-01-01 00:00:00 ]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at betfair.pages.ModifyEvents.modifyHorseRacingEvent(ModifyEvents.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>betfair.pages.ModifyEvents.modifyHorseRacingEvent(ModifyEvents.java:176)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-failed -->
+          <div class="suite-Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">betfair.pages.PlaceBetEndtoEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeBetEndtoEndHR">
+                  </a> <!-- placeBetEndtoEndHR -->
+                  <span class="method-name">placeBetEndtoEndHR</span>
+                  <div class="stack-trace"><b>"java.lang.NullPointerException
+	at betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR(PlaceBetEndtoEndTest.java:79)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+... Removed 25 stack frames<br/> java.lang.NullPointerException
+	at betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR(PlaceBetEndtoEndTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+"</b><br>betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR(PlaceBetEndtoEndTest.java:79)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-failed -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.CashoutExceptions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED">
+                  </a> <!-- reqBetCashout_CASHOUT_BET_ALREADY_SETTLED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_INVALID_EXPECTATION">
+                  </a> <!-- reqBetCashout_CASHOUT_INVALID_EXPECTATION -->
+                  <span class="method-name">reqBetCashout_CASHOUT_INVALID_EXPECTATION</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_BETABLE">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_BETABLE -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_BETABLE</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_OUTCOME_RESULTED">
+                  </a> <!-- reqBetCashout_CASHOUT_OUTCOME_RESULTED -->
+                  <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_RESULTED</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout_CASHOUT_VALUE_TOO_HIGH">
+                  </a> <!-- reqBetCashout_CASHOUT_VALUE_TOO_HIGH -->
+                  <span class="method-name">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.OxiXmlTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqAccountAddStub">
+                  </a> <!-- reqAccountAddStub -->
+                  <span class="method-name">reqAccountAddStub</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqAcctGetFreebets">
+                  </a> <!-- reqAcctGetFreebets -->
+                  <span class="method-name">reqAcctGetFreebets</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqBetCashout">
+                  </a> <!-- reqBetCashout -->
+                  <span class="method-name">reqBetCashout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqFreebetTrigger">
+                  </a> <!-- reqFreebetTrigger -->
+                  <span class="method-name">reqFreebetTrigger</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqTransGetBetDetail">
+                  </a> <!-- reqTransGetBetDetail -->
+                  <span class="method-name">reqTransGetBetDetail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqTransGetBetDetails">
+                  </a> <!-- reqTransGetBetDetails -->
+                  <span class="method-name">reqTransGetBetDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reqUtilPing">
+                  </a> <!-- reqUtilPing -->
+                  <span class="method-name">reqUtilPing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">betfair.pages.DbPublishTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClasses">
+                  </a> <!-- getClasses -->
+                  <span class="method-name">getClasses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventDetailsFootball">
+                  </a> <!-- getEventDetailsFootball -->
+                  <span class="method-name">getEventDetailsFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventDetailsHR">
+                  </a> <!-- getEventDetailsHR -->
+                  <span class="method-name">getEventDetailsHR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsByType">
+                  </a> <!-- getEventsByType -->
+                  <span class="method-name">getEventsByType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsFootball">
+                  </a> <!-- getEventsFootball -->
+                  <span class="method-name">getEventsFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEventsHR">
+                  </a> <!-- getEventsHR -->
+                  <span class="method-name">getEventsHR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOutcomeDetailsFootball">
+                  </a> <!-- getOutcomeDetailsFootball -->
+                  <span class="method-name">getOutcomeDetailsFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOutcomeDetailsHR">
+                  </a> <!-- getOutcomeDetailsHR -->
+                  <span class="method-name">getOutcomeDetailsHR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResultsByEventFootball">
+                  </a> <!-- getResultsByEventFootball -->
+                  <span class="method-name">getResultsByEventFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResultsByEventHR">
+                  </a> <!-- getResultsByEventHR -->
+                  <span class="method-name">getResultsByEventHR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTypesByClassFootball">
+                  </a> <!-- getTypesByClassFootball -->
+                  <span class="method-name">getTypesByClassFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTypesByClassHR">
+                  </a> <!-- getTypesByClassHR -->
+                  <span class="method-name">getTypesByClassHR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="status">
+                  </a> <!-- status -->
+                  <span class="method-name">status</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-skipped -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.WinLoseVoidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setResults">
+                  </a> <!-- setResults -->
+                  <span class="method-name">setResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.SearchBetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBetReceipt">
+                  </a> <!-- searchBetReceipt -->
+                  <span class="method-name">searchBetReceipt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.CreateEventsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createEnglishFootballEvent">
+                  </a> <!-- createEnglishFootballEvent -->
+                  <span class="method-name">createEnglishFootballEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createHorseRacingEvent">
+                  </a> <!-- createHorseRacingEvent -->
+                  <span class="method-name">createHorseRacingEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.FundsTransferEndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fundsTransferEndtoEnd">
+                  </a> <!-- fundsTransferEndtoEnd -->
+                  <span class="method-name">fundsTransferEndtoEnd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.ModifyEvents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballMarket">
+                  </a> <!-- modifyFootballMarket -->
+                  <span class="method-name">modifyFootballMarket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyFootballSelection">
+                  </a> <!-- modifyFootballSelection -->
+                  <span class="method-name">modifyFootballSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingMarket">
+                  </a> <!-- modifyHorseRacingMarket -->
+                  <span class="method-name">modifyHorseRacingMarket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyHorseRacingSelection">
+                  </a> <!-- modifyHorseRacingSelection -->
+                  <span class="method-name">modifyHorseRacingSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.PlaceBetEndtoEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeBetEndtoEndFootball">
+                  </a> <!-- placeBetEndtoEndFootball -->
+                  <span class="method-name">placeBetEndtoEndFootball</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">betfair.pages.SearchCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomerAccount">
+                  </a> <!-- searchCustomerAccount -->
+                  <span class="method-name">searchCustomerAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomerUsername">
+                  </a> <!-- searchCustomerUsername -->
+                  <span class="method-name">searchCustomerUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+        </div> <!-- panel Tests -->
+        <div panel-name="test-xml-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\work\projects\Betfair\src\test\resources\dev-testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Tests&quot;&gt;
+  &lt;test name=&quot;Test1&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;betfair.pages.ModifyEvents&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;modifyFootballEvent&quot;/&gt;
+          &lt;include name=&quot;modifyFootballMarket&quot;/&gt;
+          &lt;include name=&quot;modifyFootballSelection&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingEvent&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingMarket&quot;/&gt;
+          &lt;include name=&quot;modifyHorseRacingSelection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.ModifyEvents --&gt;
+      &lt;class name=&quot;betfair.pages.SearchBetTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchBetReceipt&quot;/&gt;
+          &lt;include name=&quot;searchBetUsername&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.SearchBetTest --&gt;
+      &lt;class name=&quot;betfair.pages.CreateEventsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createEnglishFootballEvent&quot;/&gt;
+          &lt;include name=&quot;createHorseRacingEvent&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.CreateEventsTest --&gt;
+      &lt;class name=&quot;betfair.pages.SearchCustomerTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchCustomerUsername&quot;/&gt;
+          &lt;include name=&quot;searchCustomerAccount&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.SearchCustomerTest --&gt;
+      &lt;class name=&quot;betfair.pages.WinLoseVoidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setResults&quot;/&gt;
+          &lt;include name=&quot;unsetResults&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.WinLoseVoidTest --&gt;
+      &lt;class name=&quot;betfair.pages.PlaceBetEndtoEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;placeBetEndtoEndHR&quot;/&gt;
+          &lt;include name=&quot;placeBetEndtoEndFootball&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.PlaceBetEndtoEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.FundsTransferEndToEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;fundsTransferEndtoEnd&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.FundsTransferEndToEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.BirEndToEndTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;birEndToEndTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.BirEndToEndTest --&gt;
+      &lt;class name=&quot;betfair.pages.OxiXmlTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;reqTransGetBetDetail&quot;/&gt;
+          &lt;include name=&quot;reqTransGetBetDetails&quot;/&gt;
+          &lt;include name=&quot;reqAccountAddStub&quot;/&gt;
+          &lt;include name=&quot;reqAcctGetFreebets&quot;/&gt;
+          &lt;include name=&quot;reqUtilPing&quot;/&gt;
+          &lt;include name=&quot;reqFreebetTrigger&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.OxiXmlTest --&gt;
+      &lt;class name=&quot;betfair.pages.CashoutExceptions&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_VALUE_TOO_HIGH&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_BET_ALREADY_SETTLED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_RESULTED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_BETABLE&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_INVALID_EXPECTATION&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED&quot;/&gt;
+          &lt;include name=&quot;reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.CashoutExceptions --&gt;
+      &lt;class name=&quot;betfair.pages.DbPublishTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getClasses&quot;/&gt;
+          &lt;include name=&quot;getEventDetailsHR&quot;/&gt;
+          &lt;include name=&quot;getEventDetailsFootball&quot;/&gt;
+          &lt;include name=&quot;getTypesByClassHR&quot;/&gt;
+          &lt;include name=&quot;getTypesByClassFootball&quot;/&gt;
+          &lt;include name=&quot;getResultsByEventHR&quot;/&gt;
+          &lt;include name=&quot;getResultsByEventFootball&quot;/&gt;
+          &lt;include name=&quot;getEventsByType&quot;/&gt;
+          &lt;include name=&quot;getEventsHR&quot;/&gt;
+          &lt;include name=&quot;getEventsFootball&quot;/&gt;
+          &lt;include name=&quot;getOutcomeDetailsHR&quot;/&gt;
+          &lt;include name=&quot;getOutcomeDetailsFootball&quot;/&gt;
+          &lt;include name=&quot;status&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- betfair.pages.DbPublishTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+&lt;/suite&gt; &lt;!-- Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tests');
+function tableData_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(49);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'fundsTransferEndtoEnd')
+data.setCell(0, 2, 'betfair.pages.FundsTransferEndToEndTest')
+data.setCell(0, 3, 325221);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'placeBetEndtoEndFootball')
+data.setCell(1, 2, 'betfair.pages.PlaceBetEndtoEndTest')
+data.setCell(1, 3, 50735);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchBetUsername')
+data.setCell(2, 2, 'betfair.pages.SearchBetTest')
+data.setCell(2, 3, 49723);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'unsetResults')
+data.setCell(3, 2, 'betfair.pages.WinLoseVoidTest')
+data.setCell(3, 3, 48309);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'placeBetEndtoEndHR')
+data.setCell(4, 2, 'betfair.pages.PlaceBetEndtoEndTest')
+data.setCell(4, 3, 41372);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'birEndToEndTest')
+data.setCell(5, 2, 'betfair.pages.BirEndToEndTest')
+data.setCell(5, 3, 34194);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchBetReceipt')
+data.setCell(6, 2, 'betfair.pages.SearchBetTest')
+data.setCell(6, 3, 29343);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createEnglishFootballEvent')
+data.setCell(7, 2, 'betfair.pages.CreateEventsTest')
+data.setCell(7, 3, 24700);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'setResults')
+data.setCell(8, 2, 'betfair.pages.WinLoseVoidTest')
+data.setCell(8, 3, 24110);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'modifyFootballSelection')
+data.setCell(9, 2, 'betfair.pages.ModifyEvents')
+data.setCell(9, 3, 20333);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'modifyFootballMarket')
+data.setCell(10, 2, 'betfair.pages.ModifyEvents')
+data.setCell(10, 3, 18056);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'modifyHorseRacingSelection')
+data.setCell(11, 2, 'betfair.pages.ModifyEvents')
+data.setCell(11, 3, 12669);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createHorseRacingEvent')
+data.setCell(12, 2, 'betfair.pages.CreateEventsTest')
+data.setCell(12, 3, 10828);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'modifyHorseRacingMarket')
+data.setCell(13, 2, 'betfair.pages.ModifyEvents')
+data.setCell(13, 3, 10726);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'modifyFootballEvent')
+data.setCell(14, 2, 'betfair.pages.ModifyEvents')
+data.setCell(14, 3, 9336);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'searchCustomerUsername')
+data.setCell(15, 2, 'betfair.pages.SearchCustomerTest')
+data.setCell(15, 3, 7253);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'modifyHorseRacingEvent')
+data.setCell(16, 2, 'betfair.pages.ModifyEvents')
+data.setCell(16, 3, 4671);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'searchCustomerAccount')
+data.setCell(17, 2, 'betfair.pages.SearchCustomerTest')
+data.setCell(17, 3, 3045);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED')
+data.setCell(18, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getEventsHR')
+data.setCell(19, 2, 'betfair.pages.DbPublishTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'reqBetCashout')
+data.setCell(20, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'getOutcomeDetailsHR')
+data.setCell(21, 2, 'betfair.pages.DbPublishTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'status')
+data.setCell(22, 2, 'betfair.pages.DbPublishTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getTypesByClassFootball')
+data.setCell(23, 2, 'betfair.pages.DbPublishTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getEventsByType')
+data.setCell(24, 2, 'betfair.pages.DbPublishTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'reqBetCashout_CASHOUT_INVALID_EXPECTATION')
+data.setCell(25, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'reqTransGetBetDetails')
+data.setCell(26, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getEventsFootball')
+data.setCell(27, 2, 'betfair.pages.DbPublishTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE')
+data.setCell(28, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'reqBetCashout_CASHOUT_BET_ALREADY_SETTLED')
+data.setCell(29, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'reqAcctGetFreebets')
+data.setCell(30, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getEventDetailsFootball')
+data.setCell(31, 2, 'betfair.pages.DbPublishTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'reqFreebetTrigger')
+data.setCell(32, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'reqBetCashout_CASHOUT_VALUE_TOO_HIGH')
+data.setCell(33, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getResultsByEventHR')
+data.setCell(34, 2, 'betfair.pages.DbPublishTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'reqTransGetBetDetail')
+data.setCell(35, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY')
+data.setCell(36, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED')
+data.setCell(37, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'reqAccountAddStub')
+data.setCell(38, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'reqBetCashout_CASHOUT_OUTCOME_RESULTED')
+data.setCell(39, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'reqUtilPing')
+data.setCell(40, 2, 'betfair.pages.OxiXmlTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'getTypesByClassHR')
+data.setCell(41, 2, 'betfair.pages.DbPublishTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'getEventDetailsHR')
+data.setCell(42, 2, 'betfair.pages.DbPublishTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'reqBetCashout_CASHOUT_OUTCOME_BETABLE')
+data.setCell(43, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'getResultsByEventFootball')
+data.setCell(44, 2, 'betfair.pages.DbPublishTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED')
+data.setCell(45, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'getOutcomeDetailsFootball')
+data.setCell(46, 2, 'betfair.pages.DbPublishTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'getClasses')
+data.setCell(47, 2, 'betfair.pages.DbPublishTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED')
+data.setCell(48, 2, 'betfair.pages.CashoutExceptions')
+data.setCell(48, 3, 0);
+window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <div id="times-div-Tests">
+              </div> <!-- times-div-Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">betfair.pages.OxiXmlTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reqBetStatus</span>
+                <br/>
+                <span class="ignored-method-name">reqGetLanguages</span>
+                <br/>
+                <span class="ignored-method-name">reqBetBuild</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.ModifyEvents</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">9650 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyFootballEvent())</span>
+                <span class="method-start">16565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">16842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">modifyFootballEvent</span>
+                <span class="method-start">19140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyFootballEvent STATUS:FAILURE METHOD:ModifyEvents.modifyFootballEvent()[pri:0, ins...)</span>
+                <span class="method-start">28478 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyFootballMarket())</span>
+                <span class="method-start">29162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">30292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modifyFootballMarket</span>
+                <span class="method-start">32801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyFootballMarket STATUS:SUCCESS METHOD:ModifyEvents.modifyFootballMarket()[pri:0, i...)</span>
+                <span class="method-start">50857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyFootballSelection())</span>
+                <span class="method-start">51154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">51307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modifyFootballSelection</span>
+                <span class="method-start">53871 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyFootballSelection STATUS:SUCCESS METHOD:ModifyEvents.modifyFootballSelection()[pr...)</span>
+                <span class="method-start">74204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyHorseRacingEvent())</span>
+                <span class="method-start">75696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">75887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">modifyHorseRacingEvent</span>
+                <span class="method-start">77701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyHorseRacingEvent STATUS:FAILURE METHOD:ModifyEvents.modifyHorseRacingEvent()[pri:...)</span>
+                <span class="method-start">82372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyHorseRacingMarket())</span>
+                <span class="method-start">82733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">82883 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modifyHorseRacingMarket</span>
+                <span class="method-start">84370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyHorseRacingMarket STATUS:SUCCESS METHOD:ModifyEvents.modifyHorseRacingMarket()[pr...)</span>
+                <span class="method-start">95097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.ModifyEvents.modifyHorseRacingSelection())</span>
+                <span class="method-start">95379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">96552 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modifyHorseRacingSelection</span>
+                <span class="method-start">98008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: modifyHorseRacingSelection STATUS:SUCCESS METHOD:ModifyEvents.modifyHorseRacingSelectio...)</span>
+                <span class="method-start">110678 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">110956 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.SearchBetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">111215 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">115759 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.SearchBetTest.searchBetReceipt() throws java.lang.Exception)</span>
+                <span class="method-start">121593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">121750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchBetReceipt</span>
+                <span class="method-start">122398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: searchBetReceipt STATUS:SUCCESS METHOD:SearchBetTest.searchBetReceipt()[pri:0, instance...)</span>
+                <span class="method-start">151741 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.SearchBetTest.searchBetUsername() throws java.lang.Exception)</span>
+                <span class="method-start">151981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">153158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchBetUsername</span>
+                <span class="method-start">154613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: searchBetUsername STATUS:FAILURE METHOD:SearchBetTest.searchBetUsername()[pri:0, instan...)</span>
+                <span class="method-start">204340 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205772 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.CreateEventsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">206043 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">211049 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.CreateEventsTest.createEnglishFootballEvent())</span>
+                <span class="method-start">233944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">234144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createEnglishFootballEvent</span>
+                <span class="method-start">236759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: createEnglishFootballEvent STATUS:SUCCESS METHOD:CreateEventsTest.createEnglishFootball...)</span>
+                <span class="method-start">261459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.CreateEventsTest.createHorseRacingEvent())</span>
+                <span class="method-start">261685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">262962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createHorseRacingEvent</span>
+                <span class="method-start">264452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: createHorseRacingEvent STATUS:SUCCESS METHOD:CreateEventsTest.createHorseRacingEvent()[...)</span>
+                <span class="method-start">275280 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">275528 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.SearchCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">275762 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">279889 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.SearchCustomerTest.searchCustomerUsername())</span>
+                <span class="method-start">284641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">284927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchCustomerUsername</span>
+                <span class="method-start">286670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: searchCustomerUsername STATUS:SUCCESS METHOD:SearchCustomerTest.searchCustomerUsername(...)</span>
+                <span class="method-start">293923 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.SearchCustomerTest.searchCustomerAccount())</span>
+                <span class="method-start">294135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">294282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchCustomerAccount</span>
+                <span class="method-start">295806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: searchCustomerAccount STATUS:SUCCESS METHOD:SearchCustomerTest.searchCustomerAccount()[...)</span>
+                <span class="method-start">298851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">299088 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.WinLoseVoidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">299349 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">303433 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.WinLoseVoidTest.setResults())</span>
+                <span class="method-start">308414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">308566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setResults</span>
+                <span class="method-start">311721 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: setResults STATUS:SUCCESS METHOD:WinLoseVoidTest.setResults()[pri:0, instance:betfair.p...)</span>
+                <span class="method-start">335831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.WinLoseVoidTest.unsetResults())</span>
+                <span class="method-start">336114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">336389 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">unsetResults</span>
+                <span class="method-start">338051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: unsetResults STATUS:FAILURE METHOD:WinLoseVoidTest.unsetResults()[pri:0, instance:betfa...)</span>
+                <span class="method-start">386362 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">386873 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.PlaceBetEndtoEndTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">387122 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">392293 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR() throws java.lang.Exception)</span>
+                <span class="method-start">395666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">395980 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeBetEndtoEndHR</span>
+                <span class="method-start">396655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: placeBetEndtoEndHR STATUS:FAILURE METHOD:PlaceBetEndtoEndTest.placeBetEndtoEndHR()[pri:...)</span>
+                <span class="method-start">438027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndFootball() throws java.lang.Exception)</span>
+                <span class="method-start">438772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">438929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeBetEndtoEndFootball</span>
+                <span class="method-start">439415 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: placeBetEndtoEndFootball STATUS:SUCCESS METHOD:PlaceBetEndtoEndTest.placeBetEndtoEndFoo...)</span>
+                <span class="method-start">490150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">493425 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.FundsTransferEndToEndTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">493683 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">497927 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.FundsTransferEndToEndTest.fundsTransferEndtoEnd() throws java.lang.Excepti...)</span>
+                <span class="method-start">501937 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">503178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fundsTransferEndtoEnd</span>
+                <span class="method-start">504889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: fundsTransferEndtoEnd STATUS:SUCCESS METHOD:FundsTransferEndToEndTest.fundsTransferEndt...)</span>
+                <span class="method-start">830110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">830446 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.BirEndToEndTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">830673 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">classInit</span>
+                <span class="method-start">834950 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void betfair.pages.BirEndToEndTest.birEndToEndTest() throws java.lang.Exception)</span>
+                <span class="method-start">839774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">839927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">birEndToEndTest</span>
+                <span class="method-start">841462 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout([TestResult: birEndToEndTest STATUS:FAILURE METHOD:BirEndToEndTest.birEndToEndTest()[pri:0, instance...)</span>
+                <span class="method-start">875658 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1200692 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.OxiXmlTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reqTransGetBetDetail</span>
+                <span class="method-start">1202420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqTransGetBetDetails</span>
+                <span class="method-start">1202420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqAccountAddStub</span>
+                <span class="method-start">1202421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqAcctGetFreebets</span>
+                <span class="method-start">1202421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqFreebetTrigger</span>
+                <span class="method-start">1202422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqUtilPing</span>
+                <span class="method-start">1202422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout</span>
+                <span class="method-start">1202423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1202423 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.CashoutExceptions</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</span>
+                <span class="method-start">1202424 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_VALUE_TOO_HIGH</span>
+                <span class="method-start">1202424 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</span>
+                <span class="method-start">1202425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</span>
+                <span class="method-start">1202426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_RESULTED</span>
+                <span class="method-start">1202426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_BETABLE</span>
+                <span class="method-start">1202427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_INVALID_EXPECTATION</span>
+                <span class="method-start">1202428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</span>
+                <span class="method-start">1202428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</span>
+                <span class="method-start">1202429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</span>
+                <span class="method-start">1202429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</span>
+                <span class="method-start">1202430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1202430 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">betfair.pages.DbPublishTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getClasses</span>
+                <span class="method-start">1202431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventDetailsHR</span>
+                <span class="method-start">1202431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventDetailsFootball</span>
+                <span class="method-start">1202432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTypesByClassHR</span>
+                <span class="method-start">1202432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTypesByClassFootball</span>
+                <span class="method-start">1202434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getResultsByEventFootball</span>
+                <span class="method-start">1202435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getResultsByEventHR</span>
+                <span class="method-start">1202435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsByType</span>
+                <span class="method-start">1202436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsHR</span>
+                <span class="method-start">1202436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEventsFootball</span>
+                <span class="method-start">1202437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOutcomeDetailsFootball</span>
+                <span class="method-start">1202438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOutcomeDetailsHR</span>
+                <span class="method-start">1202438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">status</span>
+                <span class="method-start">1202439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1202439 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE oxip SYSTEM "oxip.dtd">
+<oxip version="6.0">
+	<request>
+		<reqClientAuth>
+			<user>{user}</user>
+			<password>{pass}</password>
+			<ssoid>{ssoid}</ssoid>
+		</reqClientAuth>
+		<reqAccountAddStub>
+			<currency>{currency}</currency>
+			<accountNo>{accountNo}</accountNo>
+		</reqAccountAddStub>
+	</request>
+</oxip>

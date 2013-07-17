@@ -1,0 +1,68 @@
+{
+  "capabilities":
+      [
+        {
+		  "platform": "WINDOWS",
+          "browserName": "firefox",
+		  "version": "19.0",
+		  "firefox_binary": "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },
+		{
+		  "platform": "WINDOWS",
+          "browserName": "firefox",
+		  "version": "3.0",
+		  "firefox_binary" : "C:\\Program Files (x86)\\Mozilla Firefox 3.0\\firefox.exe",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },		
+		{
+		  "platform": "WINDOWS",
+          "browserName": "firefox",
+		  "version": "3.6",
+		  "firefox_binary" : "C:\Program Files (x86)\Mozilla Firefox 3.6\\firefox.exe",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },		
+		{
+		  "platform": "WINDOWS",
+          "browserName": "firefox",
+		  "version": "3.6",
+		  "firefox_binary" : "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },		
+		{
+          "platform": "WINDOWS",
+          "browserName": "internet explorer",
+		  "version": "8",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },		
+		{
+          "platform": "WINDOWS",
+          "browserName": "chrome",
+		  "version": "22.0.1229.79",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+        },
+		{
+		  "platform": "WINDOWS",
+		  "browserName": "safari",
+		  "version": "ANY",
+		  "maxInstances": 1,
+		  "seleniumProtocol": "WebDriver"
+		}
+      ],
+  "configuration":
+  {
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5,
+    "port": 5555,
+    "hubHost": localhost,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE oxip SYSTEM "reqBetCashout.dtd">
+<oxip version="7.0">
+	<request>
+		<reqClientAuth returnToken="N">
+			<user>{user}</user>
+			<password>{pass}</password>
+			<ssoid>{ssoid}</ssoid>
+		</reqClientAuth>
+		 <reqBetCashout>
+            <token/>
+            <betId>{betId}</betId>
+            <cashoutValue>1.00</cashoutValue>
+            <expectation>
+                <outcomeId>{eventid}</outcomeId>
+                <priceType>L</priceType>
+                <maxPriceNum>3</maxPriceNum>
+                <maxPriceDen>1</maxPriceDen>
+                <handicap>3</handicap>
+            </expectation>
+        </reqBetCashout>
+	</request>
+</oxip>

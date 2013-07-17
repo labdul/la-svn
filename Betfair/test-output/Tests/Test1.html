@@ -1,0 +1,1416 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/49</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 25 16:07:25 BST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>76 seconds (76079 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.init()'><b>init</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:87)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:95)
+	at betfair.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:123)
+	at betfair.pages.TestBase.init(TestBase.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:57)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:51)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:213)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+</pre></div><a href='#' onClick='toggleBox("stack-trace247656929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247656929'><pre>org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:87)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:95)
+	at betfair.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:123)
+	at betfair.pages.TestBase.init(TestBase.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi-utils: Opening database
+*** LOG addons.xpi: Add-on proxyauth@lammersoft.com modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
+*** LOG addons.xpi: Updating database with changes to installed add-ons
+*** LOG addons.xpi-utils: Updating add-on states
+*** LOG addons.xpi-utils: Writing add-ons list
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+*** LOG addons.xpi-utils: shutdown
+*** LOG addons.xpi-utils: Database closed
+*** LOG addons.xpi: startup
+*** LOG addons.xpi: Skipping unavailable install location app-system-local
+*** LOG addons.xpi: Skipping unavailable install location app-system-share
+*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\LABDUL~1.OPE\AppData\Local\Temp\anonymous2611613583454560056webdriver-profile\extensions\webdriver-staging
+*** LOG addons.xpi: checkForChanges
+*** LOG addons.xpi: No changes found
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+*** LOG addons.manager: shutdown
+*** LOG addons.xpi: shutdown
+
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(null)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+	at java.lang.reflect.Constructor.newInstance(null)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:57)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:51)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:213)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(null)
+	at java.util.concurrent.FutureTask.run(null)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+</pre></div></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.classInit()'><b>classInit</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.init()'><b>init</b><br>Test class: betfair.pages.SearchBetTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.SearchBetTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.init()'><b>init</b><br>Test class: betfair.pages.CreateEventsTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.CreateEventsTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.init()'><b>init</b><br>Test class: betfair.pages.SearchCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.SearchCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.init()'><b>init</b><br>Test class: betfair.pages.WinLoseVoidTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.WinLoseVoidTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.init()'><b>init</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.init()'><b>init</b><br>Test class: betfair.pages.FundsTransferEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.FundsTransferEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.init()'><b>init</b><br>Test class: betfair.pages.BirEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.BirEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.init()'><b>init</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.init()'><b>init</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.classInit()'><b>classInit</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.init()'><b>init</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.classInit()'><b>classInit</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.startTest()'><b>startTest</b><br>Test class: betfair.pages.ModifyEvents</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.login()'><b>login</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.SearchBetTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.login()'><b>login</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.SearchBetTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.login()'><b>login</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.CreateEventsTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.login()'><b>login</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.CreateEventsTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.login()'><b>login</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.SearchCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.login()'><b>login</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.SearchCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.login()'><b>login</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.WinLoseVoidTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.login()'><b>login</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.WinLoseVoidTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.login()'><b>login</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.login()'><b>login</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.login()'><b>login</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.FundsTransferEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.login()'><b>login</b><br>Test class: betfair.pages.FundsTransferEndToEndTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.BirEndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.login()'><b>login</b><br>Test class: betfair.pages.BirEndToEndTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.OxiXmlTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.login()'><b>login</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.startTest()'><b>startTest</b><br>Test class: betfair.pages.CashoutExceptions</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.login()'><b>login</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.startTest()'><b>startTest</b><br>Test class: betfair.pages.DbPublishTest</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.login()'><b>login</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs in before method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.logout()'><b>logout</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.logout()'><b>logout</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.logout()'><b>logout</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.logout()'><b>logout</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.logout()'><b>logout</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.logout()'><b>logout</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.logout()'><b>logout</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.logout()'><b>logout</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.logout()'><b>logout</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.logout()'><b>logout</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.logout()'><b>logout</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.logout()'><b>logout</b><br>Test class: betfair.pages.FundsTransferEndToEndTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.logout()'><b>logout</b><br>Test class: betfair.pages.BirEndToEndTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.logout()'><b>logout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.logout()'><b>logout</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.logout()'><b>logout</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: Logs out after method</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='betfair.pages.BirEndToEndTest.birEndToEndTest()'><b>birEndToEndTest</b><br>Test class: betfair.pages.BirEndToEndTest<br>Test method: C207483 - BIR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.BirEndToEndTest@2d3d0953</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.createEnglishFootballEvent()'><b>createEnglishFootballEvent</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: C141950 - Create an English Football Event</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.CreateEventsTest.createHorseRacingEvent()'><b>createHorseRacingEvent</b><br>Test class: betfair.pages.CreateEventsTest<br>Test method: C141963 - Create a Horse Racing Event</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CreateEventsTest@df9411</td></tr>
+<tr>
+<td title='betfair.pages.FundsTransferEndToEndTest.fundsTransferEndtoEnd()'><b>fundsTransferEndtoEnd</b><br>Test class: betfair.pages.FundsTransferEndToEndTest<br>Test method: C201986 - Funds transfer - Betfair wallet</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.FundsTransferEndToEndTest@63d64969</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getClasses()'><b>getClasses</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244605 - getClasses</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getEventDetailsFootball()'><b>getEventDetailsFootball</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244607 - getEventDetailsFootball</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getEventDetailsHR()'><b>getEventDetailsHR</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244606 - getEventDetailsHR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getEventsByType()'><b>getEventsByType</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244612 - getEventsByType</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getEventsFootball()'><b>getEventsFootball</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244614 - getEventsFootball</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getEventsHR()'><b>getEventsHR</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244613 - getEventsHR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getOutcomeDetailsFootball()'><b>getOutcomeDetailsFootball</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244616 - getOutcomeDetailsFootball</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getOutcomeDetailsHR()'><b>getOutcomeDetailsHR</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244615 - getOutcomeDetailsHR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getResultsByEventFootball()'><b>getResultsByEventFootball</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244611 - getResultsByEventFootball</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getResultsByEventHR()'><b>getResultsByEventHR</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244610 - getResultsByEventHR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getTypesByClassFootball()'><b>getTypesByClassFootball</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244609 - getTypesByClassFootball</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.getTypesByClassHR()'><b>getTypesByClassHR</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244608 - getTypesByClassHR</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyFootballEvent()'><b>modifyFootballEvent</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141955 - Modify a Football Event and view changes in View Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyFootballMarket()'><b>modifyFootballMarket</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141954 - Modify a Football Market and view changes in View Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyFootballSelection()'><b>modifyFootballSelection</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141953 Modify a Football Selection and view changes in View Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyHorseRacingEvent()'><b>modifyHorseRacingEvent</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141968 - Modify an HR Event and view changes in View Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyHorseRacingMarket()'><b>modifyHorseRacingMarket</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141967 - Modify an HR Market to EachWay and view changes in Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.ModifyEvents.modifyHorseRacingSelection()'><b>modifyHorseRacingSelection</b><br>Test class: betfair.pages.ModifyEvents<br>Test method: C141966 Modify a HR Selection and view changes in View Audit History</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.ModifyEvents@6dbac50f</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndFootball()'><b>placeBetEndtoEndFootball</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: C201990 - Place bet - Football</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR()'><b>placeBetEndtoEndHR</b><br>Test class: betfair.pages.PlaceBetEndtoEndTest<br>Test method: C201985 - Place bet - Horse Racing</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.PlaceBetEndtoEndTest@572bd15e</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqAccountAddStub()'><b>reqAccountAddStub</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217757 - reqAccountAddStub</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqAcctGetFreebets()'><b>reqAcctGetFreebets</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217761 - reqAcctGetFreebets</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqBetCashout()'><b>reqBetCashout</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217764 - reqBetCashout</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_BET_ALREADY_SETTLED()'><b>reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227809 - CASHOUT_BET_ALREADY_SETTLED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_INVALID_EXPECTATION()'><b>reqBetCashout_CASHOUT_INVALID_EXPECTATION</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227814 - CASHOUT_INVALID_EXPECTATION</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_BETABLE()'><b>reqBetCashout_CASHOUT_OUTCOME_BETABLE</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227812 - CASHOUT_OUTCOME_BETABLE</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED()'><b>reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227816 - CASHOUT_OUTCOME_HANDICAP_CHANGED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE()'><b>reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227811 - CASHOUT_OUTCOME_NOT_BETABLE</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED()'><b>reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227808 - CASHOUT_OUTCOME_NOT_RESULTED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED()'><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227813 - CASHOUT_OUTCOME_PRICE_CHANGED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY()'><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227817 - CASHOUT_OUTCOME_PRICE_EMPTY</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED()'><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227815 - CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_OUTCOME_RESULTED()'><b>reqBetCashout_CASHOUT_OUTCOME_RESULTED</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227810 - CASHOUT_OUTCOME_RESULTED</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.CashoutExceptions.reqBetCashout_CASHOUT_VALUE_TOO_HIGH()'><b>reqBetCashout_CASHOUT_VALUE_TOO_HIGH</b><br>Test class: betfair.pages.CashoutExceptions<br>Test method: C227807 - CASHOUT_VALUE_TOO_HIGH</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.CashoutExceptions@58d3d0d4</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqFreebetTrigger()'><b>reqFreebetTrigger</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217758 - reqFreebetTrigger</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqTransGetBetDetail()'><b>reqTransGetBetDetail</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217760 - reqTransGetBetDetail</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqTransGetBetDetails()'><b>reqTransGetBetDetails</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217759 - reqTransGetBetDetails</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.OxiXmlTest.reqUtilPing()'><b>reqUtilPing</b><br>Test class: betfair.pages.OxiXmlTest<br>Test method: C217761 - reqUtilPing</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.OxiXmlTest@20197522</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.searchBetReceipt()'><b>searchBetReceipt</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: C93962 - Find Bets with Receipt like</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchBetTest.searchBetUsername()'><b>searchBetUsername</b><br>Test class: betfair.pages.SearchBetTest<br>Test method: C141958 - Find Bets with Username like</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchBetTest@2684c71b</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.searchCustomerAccount()'><b>searchCustomerAccount</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: C141961	- Search for a Customer with their Account No</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.SearchCustomerTest.searchCustomerUsername()'><b>searchCustomerUsername</b><br>Test class: betfair.pages.SearchCustomerTest<br>Test method: C141960 - Search for a Customer with their Username</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.SearchCustomerTest@3a333bdb</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.setResults()'><b>setResults</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: C141956 - Set results (Win, Lose and Void) for a selections and settle Market</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+<tr>
+<td title='betfair.pages.DbPublishTest.status()'><b>status</b><br>Test class: betfair.pages.DbPublishTest<br>Test method: C244617 - status</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.DbPublishTest@5059a6b5</td></tr>
+<tr>
+<td title='betfair.pages.WinLoseVoidTest.unsetResults()'><b>unsetResults</b><br>Test class: betfair.pages.WinLoseVoidTest<br>Test method: C141957	- Unsettle market</td>
+<td></td>
+<td>0</td>
+<td>betfair.pages.WinLoseVoidTest@2dcfde49</td></tr>
+</table><p>
+</body>
+</html>

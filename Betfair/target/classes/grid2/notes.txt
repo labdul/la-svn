@@ -1,0 +1,34 @@
+platform: "WINDOWS", "ANDROID", "XP", "VISTA", "MAC", "LINUX"
+browserName: "chrome", "firefox", "opera", "ie", "htmlunit", "iphone", "safari"
+version: "ANY"
+
+Example:
+
+		  "platform": "WINDOWS",
+          "browserName": "firefox",
+		  "version": "19.0",
+		  "firefox_binary": "C:\Program Files (x86)\Mozilla Firefox d-ala\\firefox.exe",
+          "maxInstances": 1,
+          "seleniumProtocol": "WebDriver"
+          
+firefox_binary is used only if you have installed different versions of firefox on the same machine
+
+For chrome, we should use chromedriver and start the nodes with -Dwebdriver.chrome.driver=chromedriver,
+where chromedriver is the path including the executable
+
+Safari tests are not supported by the grid
+
+For android tests:
+
+http://code.google.com/p/selenium/wiki/AndroidDriver
+
+It needs to be run as a hub on the same machine where the tests are being run as the android emulator 
+assign a strange ip and the server can be accessed only from http://localhost
+
+
+For ios tests:
+
+http://code.google.com/p/selenium/wiki/IPhoneDriver
+
+It needs to be run as a hub o a different machine also as the iphone / ipad simulator is generating 
+dhcp ip address
