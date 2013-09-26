@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Tests]">
+  <test name="Test1(failed)" preserve-order="true">
+    <classes>
+      <class name="betfair.pages.WinLoseVoidTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="init"/>
+          <include name="login"/>
+          <include name="classInit"/>
+          <include name="logout"/>
+          <include name="unsetResults"/>
+        </methods>
+      </class> <!-- betfair.pages.WinLoseVoidTest -->
+      <class name="betfair.pages.CashoutExceptions">
+        <methods>
+          <include name="tearDown"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED"/>
+          <include name="reqBetCashout_CASHOUT_INVALID_EXPECTATION"/>
+          <include name="reqBetCashout_CASHOUT_BET_ALREADY_SETTLED"/>
+          <include name="reqBetCashout_CASHOUT_VALUE_TOO_HIGH"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_RESULTED"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_BETABLE"/>
+          <include name="reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED"/>
+        </methods>
+      </class> <!-- betfair.pages.CashoutExceptions -->
+      <class name="betfair.pages.OxiXmlTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="reqFreebetTrigger"/>
+          <include name="reqAccountAddStub"/>
+          <include name="reqBetCashout"/>
+          <include name="reqTransGetBetDetails"/>
+          <include name="reqUtilPing"/>
+          <include name="reqTransGetBetDetail"/>
+          <include name="reqAcctGetFreebets"/>
+        </methods>
+      </class> <!-- betfair.pages.OxiXmlTest -->
+      <class name="betfair.pages.SearchBetTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="init"/>
+          <include name="classInit"/>
+          <include name="searchBetUsername"/>
+          <include name="logout"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- betfair.pages.SearchBetTest -->
+      <class name="betfair.pages.BirEndToEndTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="birEndToEndTest"/>
+          <include name="startTest"/>
+          <include name="init"/>
+          <include name="classInit"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- betfair.pages.BirEndToEndTest -->
+      <class name="betfair.pages.CreateEventsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="classInit"/>
+          <include name="logout"/>
+          <include name="init"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- betfair.pages.CreateEventsTest -->
+      <class name="betfair.pages.FundsTransferEndToEndTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="logout"/>
+          <include name="init"/>
+          <include name="classInit"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- betfair.pages.FundsTransferEndToEndTest -->
+      <class name="betfair.pages.DbPublishTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="status"/>
+          <include name="getEventsByType"/>
+          <include name="getTypesByClassHR"/>
+          <include name="getEventDetailsFootball"/>
+          <include name="getEventsHR"/>
+          <include name="getOutcomeDetailsFootball"/>
+          <include name="getOutcomeDetailsHR"/>
+          <include name="getTypesByClassFootball"/>
+          <include name="getClasses"/>
+          <include name="getEventsFootball"/>
+          <include name="getResultsByEventHR"/>
+          <include name="getEventDetailsHR"/>
+          <include name="getResultsByEventFootball"/>
+        </methods>
+      </class> <!-- betfair.pages.DbPublishTest -->
+      <class name="betfair.pages.ModifyEvents">
+        <methods>
+          <include name="tearDown"/>
+          <include name="modifyHorseRacingEvent"/>
+          <include name="startTest"/>
+          <include name="init"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="classInit"/>
+          <include name="modifyFootballEvent"/>
+        </methods>
+      </class> <!-- betfair.pages.ModifyEvents -->
+      <class name="betfair.pages.SearchCustomerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="startTest"/>
+          <include name="logout"/>
+          <include name="init"/>
+          <include name="classInit"/>
+        </methods>
+      </class> <!-- betfair.pages.SearchCustomerTest -->
+      <class name="betfair.pages.PlaceBetEndtoEndTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="init"/>
+          <include name="placeBetEndtoEndHR"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="classInit"/>
+        </methods>
+      </class> <!-- betfair.pages.PlaceBetEndtoEndTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

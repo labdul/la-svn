@@ -1,0 +1,729 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test1</td><td class="numi">12</td><td class="numi">12</td><td class="numi_attn">31</td><td class="numi_attn">6</td><td class="numi">1,202.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">betfair.pages.BirEndToEndTest<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1372331596037</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">betfair.pages.ModifyEvents<td><a href="#m2"><b>modifyFootballEvent</b>  ("C141955 - Modify a Football Event and view changes in View Audit History")</a></td><td class="numi">1</td><td>1372330414485</td><td class="numi">9336</td></tr><tr class="failedodd"><td><a href="#m3"><b>modifyHorseRacingEvent</b>  ("C141968 - Modify an HR Event and view changes in View Audit History")</a></td><td class="numi">1</td><td>1372330473046</td><td class="numi">4671</td></tr>
+<tr class="failedeven"><td rowspan="1">betfair.pages.SearchBetTest<td><a href="#m4"><b>searchBetUsername</b>  ("C141958 - Find Bets with Username like")</a></td><td class="numi">1</td><td>1372330549958</td><td class="numi">49723</td></tr>
+<tr class="failedodd"><td rowspan="1">betfair.pages.WinLoseVoidTest<td><a href="#m5"><b>unsetResults</b>  ("C141957	- Unsettle market")</a></td><td class="numi">1</td><td>1372330733396</td><td class="numi">48309</td></tr>
+<tr class="failedeven"><td rowspan="1">betfair.pages.PlaceBetEndtoEndTest<td><a href="#m6"><b>placeBetEndtoEndHR</b>  ("C201985 - Place bet - Horse Racing")</a></td><td class="numi">1</td><td>1372330792000</td><td class="numi">41372</td></tr>
+<tr class="failedodd"><td rowspan="1">betfair.pages.BirEndToEndTest<td><a href="#m7"><b>birEndToEndTest</b>  ("C207483 - BIR")</a></td><td class="numi">1</td><td>1372331236807</td><td class="numi">34194</td></tr>
+<tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">betfair.pages.CashoutExceptions<td><a href="#m8"><b>logout</b>  ("Logs out after method")</a></td><td class="numi">11</td><td>1372331597769</td><td class="numi">6</td></tr>
+<tr class="skippedeven"><td rowspan="1">betfair.pages.DbPublishTest<td><a href="#m9"><b>startTest</b>  </a></td><td class="numi">13</td><td>1372331597775</td><td class="numi">8</td></tr>
+<tr class="skippedodd"><td rowspan="1">betfair.pages.CashoutExceptions<td><a href="#m10"><b>startTest</b>  </a></td><td class="numi">11</td><td>1372331597769</td><td class="numi">5</td></tr>
+<tr class="skippedeven"><td rowspan="3">betfair.pages.OxiXmlTest<td><a href="#m11"><b>init</b>  </a></td><td class="numi">1</td><td>1372331597764</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m12"><b>startTest</b>  </a></td><td class="numi">7</td><td>1372331597764</td><td class="numi">4</td></tr><tr class="skippedeven"><td><a href="#m13"><b>login</b>  ("Logs in before method")</a></td><td class="numi">7</td><td>1372331597765</td><td class="numi">3</td></tr>
+<tr class="skippedodd"><td rowspan="1">betfair.pages.DbPublishTest<td><a href="#m14"><b>classInit</b>  </a></td><td class="numi">1</td><td>1372331597775</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">betfair.pages.CashoutExceptions<td><a href="#m15"><b>login</b>  ("Logs in before method")</a></td><td class="numi">11</td><td>1372331597769</td><td class="numi">5</td></tr>
+<tr class="skippedodd"><td rowspan="2">betfair.pages.DbPublishTest<td><a href="#m16"><b>logout</b>  ("Logs out after method")</a></td><td class="numi">13</td><td>1372331597776</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m17"><b>login</b>  ("Logs in before method")</a></td><td class="numi">13</td><td>1372331597776</td><td class="numi">8</td></tr>
+<tr class="skippedeven"><td rowspan="1">betfair.pages.CashoutExceptions<td><a href="#m18"><b>classInit</b>  </a></td><td class="numi">1</td><td>1372331597769</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">betfair.pages.OxiXmlTest<td><a href="#m19"><b>logout</b>  ("Logs out after method")</a></td><td class="numi">7</td><td>1372331597765</td><td class="numi">3</td></tr>
+<tr class="skippedeven"><td rowspan="1">betfair.pages.CashoutExceptions<td><a href="#m20"><b>init</b>  </a></td><td class="numi">1</td><td>1372331597769</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">betfair.pages.DbPublishTest<td><a href="#m21"><b>init</b>  </a></td><td class="numi">1</td><td>1372331597775</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">betfair.pages.OxiXmlTest<td><a href="#m22"><b>classInit</b>  </a></td><td class="numi">1</td><td>1372331597764</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test1 &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="7">betfair.pages.OxiXmlTest<td><a href="#m23"><b>reqTransGetBetDetail</b>  ("C217760 - reqTransGetBetDetail")</a></td><td class="numi">1</td><td>1372331597765</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m24"><b>reqTransGetBetDetails</b>  ("C217759 - reqTransGetBetDetails")</a></td><td class="numi">1</td><td>1372331597765</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m25"><b>reqAccountAddStub</b>  ("C217757 - reqAccountAddStub")</a></td><td class="numi">1</td><td>1372331597766</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m26"><b>reqAcctGetFreebets</b>  ("C217761 - reqAcctGetFreebets")</a></td><td class="numi">1</td><td>1372331597766</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m27"><b>reqFreebetTrigger</b>  ("C217758 - reqFreebetTrigger")</a></td><td class="numi">1</td><td>1372331597767</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m28"><b>reqUtilPing</b>  ("C217761 - reqUtilPing")</a></td><td class="numi">1</td><td>1372331597767</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m29"><b>reqBetCashout</b>  ("C217764 - reqBetCashout")</a></td><td class="numi">1</td><td>1372331597768</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="11">betfair.pages.CashoutExceptions<td><a href="#m30"><b>reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</b>  ("C227808 - CASHOUT_OUTCOME_NOT_RESULTED")</a></td><td class="numi">1</td><td>1372331597769</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m31"><b>reqBetCashout_CASHOUT_VALUE_TOO_HIGH</b>  ("C227807 - CASHOUT_VALUE_TOO_HIGH")</a></td><td class="numi">1</td><td>1372331597769</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m32"><b>reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</b>  ("C227809 - CASHOUT_BET_ALREADY_SETTLED")</a></td><td class="numi">1</td><td>1372331597770</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m33"><b>reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</b>  ("C227811 - CASHOUT_OUTCOME_NOT_BETABLE")</a></td><td class="numi">1</td><td>1372331597771</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m34"><b>reqBetCashout_CASHOUT_OUTCOME_RESULTED</b>  ("C227810 - CASHOUT_OUTCOME_RESULTED")</a></td><td class="numi">1</td><td>1372331597771</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m35"><b>reqBetCashout_CASHOUT_OUTCOME_BETABLE</b>  ("C227812 - CASHOUT_OUTCOME_BETABLE")</a></td><td class="numi">1</td><td>1372331597772</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m36"><b>reqBetCashout_CASHOUT_INVALID_EXPECTATION</b>  ("C227814 - CASHOUT_INVALID_EXPECTATION")</a></td><td class="numi">1</td><td>1372331597773</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m37"><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</b>  ("C227813 - CASHOUT_OUTCOME_PRICE_CHANGED")</a></td><td class="numi">1</td><td>1372331597773</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m38"><b>reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</b>  ("C227816 - CASHOUT_OUTCOME_HANDICAP_CHANGED")</a></td><td class="numi">1</td><td>1372331597774</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m39"><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</b>  ("C227815 - CASHOUT_OUTCOME_PRICE_NOT_PROVIDED")</a></td><td class="numi">1</td><td>1372331597774</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m40"><b>reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</b>  ("C227817 - CASHOUT_OUTCOME_PRICE_EMPTY")</a></td><td class="numi">1</td><td>1372331597775</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="13">betfair.pages.DbPublishTest<td><a href="#m41"><b>getClasses</b>  ("C244605 - getClasses")</a></td><td class="numi">1</td><td>1372331597776</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m42"><b>getEventDetailsHR</b>  ("C244606 - getEventDetailsHR")</a></td><td class="numi">1</td><td>1372331597776</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m43"><b>getEventDetailsFootball</b>  ("C244607 - getEventDetailsFootball")</a></td><td class="numi">1</td><td>1372331597777</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m44"><b>getTypesByClassHR</b>  ("C244608 - getTypesByClassHR")</a></td><td class="numi">1</td><td>1372331597777</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m45"><b>getTypesByClassFootball</b>  ("C244609 - getTypesByClassFootball")</a></td><td class="numi">1</td><td>1372331597779</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m46"><b>getResultsByEventFootball</b>  ("C244611 - getResultsByEventFootball")</a></td><td class="numi">1</td><td>1372331597780</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m47"><b>getResultsByEventHR</b>  ("C244610 - getResultsByEventHR")</a></td><td class="numi">1</td><td>1372331597780</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m48"><b>getEventsByType</b>  ("C244612 - getEventsByType")</a></td><td class="numi">1</td><td>1372331597781</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m49"><b>getEventsHR</b>  ("C244613 - getEventsHR")</a></td><td class="numi">1</td><td>1372331597781</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m50"><b>getEventsFootball</b>  ("C244614 - getEventsFootball")</a></td><td class="numi">1</td><td>1372331597782</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m51"><b>getOutcomeDetailsFootball</b>  ("C244616 - getOutcomeDetailsFootball")</a></td><td class="numi">1</td><td>1372331597783</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m52"><b>getOutcomeDetailsHR</b>  ("C244615 - getOutcomeDetailsHR")</a></td><td class="numi">1</td><td>1372331597783</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m53"><b>status</b>  ("C244617 - status")</a></td><td class="numi">1</td><td>1372331597784</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">betfair.pages.ModifyEvents<td><a href="#m54"><b>modifyFootballMarket</b>  ("C141954 - Modify a Football Market and view changes in View Audit History")</a></td><td class="numi">1</td><td>1372330428146</td><td class="numi">18056</td></tr><tr class="passedodd"><td><a href="#m55"><b>modifyFootballSelection</b>  ("C141953 Modify a Football Selection and view changes in View Audit History")</a></td><td class="numi">1</td><td>1372330449216</td><td class="numi">20333</td></tr><tr class="passedodd"><td><a href="#m56"><b>modifyHorseRacingMarket</b>  ("C141967 - Modify an HR Market to EachWay and view changes in Audit History")</a></td><td class="numi">1</td><td>1372330479715</td><td class="numi">10726</td></tr><tr class="passedodd"><td><a href="#m57"><b>modifyHorseRacingSelection</b>  ("C141966 Modify a HR Selection and view changes in View Audit History")</a></td><td class="numi">1</td><td>1372330493353</td><td class="numi">12669</td></tr>
+<tr class="passedeven"><td rowspan="1">betfair.pages.SearchBetTest<td><a href="#m58"><b>searchBetReceipt</b>  ("C93962 - Find Bets with Receipt like")</a></td><td class="numi">1</td><td>1372330517743</td><td class="numi">29343</td></tr>
+<tr class="passedodd"><td rowspan="2">betfair.pages.CreateEventsTest<td><a href="#m59"><b>createEnglishFootballEvent</b>  ("C141950 - Create an English Football Event")</a></td><td class="numi">1</td><td>1372330632104</td><td class="numi">24700</td></tr><tr class="passedodd"><td><a href="#m60"><b>createHorseRacingEvent</b>  ("C141963 - Create a Horse Racing Event")</a></td><td class="numi">1</td><td>1372330659797</td><td class="numi">10828</td></tr>
+<tr class="passedeven"><td rowspan="2">betfair.pages.SearchCustomerTest<td><a href="#m61"><b>searchCustomerUsername</b>  ("C141960 - Search for a Customer with their Username")</a></td><td class="numi">1</td><td>1372330682015</td><td class="numi">7253</td></tr><tr class="passedeven"><td><a href="#m62"><b>searchCustomerAccount</b>  ("C141961	- Search for a Customer with their Account No")</a></td><td class="numi">1</td><td>1372330691151</td><td class="numi">3045</td></tr>
+<tr class="passedodd"><td rowspan="1">betfair.pages.WinLoseVoidTest<td><a href="#m63"><b>setResults</b>  ("C141956 - Set results (Win, Lose and Void) for a selections and settle Market")</a></td><td class="numi">1</td><td>1372330707066</td><td class="numi">24110</td></tr>
+<tr class="passedeven"><td rowspan="1">betfair.pages.PlaceBetEndtoEndTest<td><a href="#m64"><b>placeBetEndtoEndFootball</b>  ("C201990 - Place bet - Football")</a></td><td class="numi">1</td><td>1372330834760</td><td class="numi">50735</td></tr>
+<tr class="passedodd"><td rowspan="1">betfair.pages.FundsTransferEndToEndTest<td><a href="#m65"><b>fundsTransferEndtoEnd</b>  ("C201986 - Funds transfer - Betfair wallet")</a></td><td class="numi">1</td><td>1372330900234</td><td class="numi">325221</td></tr>
+</table>
+<h1>Test1</h1>
+<a id="m1"></a><h2>betfair.pages.BirEndToEndTest:tearDown</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:409)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:285)
+<br/>at betfair.pages.TestBase.tearDown(TestBase.java:93)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:601)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+<br/>at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+<br/>at org.testng.TestNG.run(TestNG.java:1030)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:601)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+<br/>1 lines not shown
+<p>Caused by Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(null)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+<br/>at java.lang.reflect.Method.invoke(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at $Proxy1.quit(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:194)
+<br/>at org.openqa.selenium.remote.server.handler.DeleteSession.call(DeleteSession.java:49)
+<br/>at org.openqa.selenium.remote.server.handler.DeleteSession.call(DeleteSession.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(null)
+<br/>at java.util.concurrent.FutureTask.run(null)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+<br/>at java.lang.Thread.run(null)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>betfair.pages.SearchBetTest:searchBetUsername</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.getText(Unknown Source)
+<br/>at betfair.pages.AdminBetSearch.getReceipt(AdminBetSearch.java:95)
+<br/>at betfair.pages.SearchBetTest.searchBetUsername(SearchBetTest.java:126)
+<br/>34 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.getText(Unknown Source)
+<br/>at betfair.pages.AdminBetSearch.getReceipt(AdminBetSearch.java:95)
+<br/>at betfair.pages.SearchBetTest.searchBetUsername(SearchBetTest.java:126)
+<br/>34 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//center/table[2]/tbody/tr[16]/td[2]&quot;}
+Command duration or timeout: 30.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 23235d7b-9207-4c42-8b91-778b40a4985a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+<br/>at java.lang.reflect.Constructor.newInstance(null)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+<br/>at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+<br/>at java.lang.reflect.Method.invoke(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at $Proxy1.findElement(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(null)
+<br/>at java.util.concurrent.FutureTask.run(null)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+<br/>at java.lang.Thread.run(null)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>betfair.pages.BirEndToEndTest:birEndToEndTest</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.click(Unknown Source)
+<br/>at betfair.pages.AdminMarketCreation.clickAddEventMarket(AdminMarketCreation.java:130)
+<br/>at betfair.pages.BirEndToEndTest.birEndToEndTest(BirEndToEndTest.java:64)
+<br/>34 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.click(Unknown Source)
+<br/>at betfair.pages.AdminMarketCreation.clickAddEventMarket(AdminMarketCreation.java:130)
+<br/>at betfair.pages.BirEndToEndTest.birEndToEndTest(BirEndToEndTest.java:64)
+<br/>34 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@type,&apos;button&apos;) and contains(@onclick,&apos;return fs&apos;)and contains(@value,&apos;Add Event Market&apos;)]&quot;}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 360325a0-e0d4-490b-906f-79df2424e2d4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+<br/>at java.lang.reflect.Constructor.newInstance(null)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+<br/>at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+<br/>at java.lang.reflect.Method.invoke(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at $Proxy1.findElement(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(null)
+<br/>at java.util.concurrent.FutureTask.run(null)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+<br/>at java.lang.Thread.run(null)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>betfair.pages.WinLoseVoidTest:unsetResults</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.click(Unknown Source)
+<br/>at betfair.pages.AdminEventUnsettle.clickCategoryHorseRacing(AdminEventUnsettle.java:105)
+<br/>at betfair.pages.WinLoseVoidTest.unsetResults(WinLoseVoidTest.java:147)
+<br/>34 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:266)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+<br/>at $Proxy9.click(Unknown Source)
+<br/>at betfair.pages.AdminEventUnsettle.clickCategoryHorseRacing(AdminEventUnsettle.java:105)
+<br/>at betfair.pages.WinLoseVoidTest.unsetResults(WinLoseVoidTest.java:147)
+<br/>34 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;HORSE_RACING&apos;)]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9c&apos;, time: &apos;2013-02-19 00:15:27&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 918f09d0-b7a5-4cb6-9d4f-20ba5c789c1e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=19.0}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.30.0&apos;, revision: &apos;dc1ef9ceb805a672f56dc49198f9ffbd4ca345c7&apos;, time: &apos;2013-02-19 09:14:38&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(null)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(null)
+<br/>at java.lang.reflect.Constructor.newInstance(null)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+<br/>at sun.reflect.GeneratedMethodAccessor22.invoke(null)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(null)
+<br/>at java.lang.reflect.Method.invoke(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at $Proxy1.findElement(null)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(null)
+<br/>at java.util.concurrent.FutureTask.run(null)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:167)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+<br/>at java.lang.Thread.run(null)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>betfair.pages.ModifyEvents:modifyFootballEvent</h2>
+<div style="padding-left:3em">
+<p>expected [2014-06-27 11:53:37 ] but found [2016-01-01 00:00:00 ]</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at betfair.pages.ModifyEvents.modifyFootballEvent(ModifyEvents.java:71)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>betfair.pages.PlaceBetEndtoEndTest:placeBetEndtoEndHR</h2>
+<div style="padding-left:3em">
+<p>null</p>
+betfair.pages.PlaceBetEndtoEndTest.placeBetEndtoEndHR(PlaceBetEndtoEndTest.java:79)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>betfair.pages.ModifyEvents:modifyHorseRacingEvent</h2>
+<div style="padding-left:3em">
+<p>expected [2014-06-27 11:54:35 ] but found [2016-01-01 00:00:00 ]</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at betfair.pages.ModifyEvents.modifyHorseRacingEvent(ModifyEvents.java:176)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>betfair.pages.OxiXmlTest:init</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>betfair.pages.DbPublishTest:classInit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>betfair.pages.CashoutExceptions:classInit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>betfair.pages.CashoutExceptions:init</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m67"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m68"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m69"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m70"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m71"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m72"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m73"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m74"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m75"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m76"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m77"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m78"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m79"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m80"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m81"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m82"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m83"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m84"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m85"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m86"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m87"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m88"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m89"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m90"></a><h2>betfair.pages.CashoutExceptions:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m91"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m92"></a><h2>betfair.pages.OxiXmlTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m93"></a><h2>betfair.pages.OxiXmlTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m94"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m95"></a><h2>betfair.pages.DbPublishTest:init</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m96"></a><h2>betfair.pages.OxiXmlTest:classInit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m97"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m98"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m99"></a><h2>betfair.pages.OxiXmlTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m100"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m101"></a><h2>betfair.pages.CashoutExceptions:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m102"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m103"></a><h2>betfair.pages.DbPublishTest:login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m104"></a><h2>betfair.pages.CashoutExceptions:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m105"></a><h2>betfair.pages.DbPublishTest:startTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m106"></a><h2>betfair.pages.DbPublishTest:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m107"></a><h2>betfair.pages.OxiXmlTest:reqBetCashout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m108"></a><h2>betfair.pages.DbPublishTest:getOutcomeDetailsHR</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m109"></a><h2>betfair.pages.DbPublishTest:status</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m110"></a><h2>betfair.pages.DbPublishTest:getTypesByClassFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m111"></a><h2>betfair.pages.DbPublishTest:getEventsByType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m112"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_INVALID_EXPECTATION</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m113"></a><h2>betfair.pages.OxiXmlTest:reqTransGetBetDetails</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m114"></a><h2>betfair.pages.DbPublishTest:getEventsFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m115"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_NOT_BETABLE</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m116"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_BET_ALREADY_SETTLED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m117"></a><h2>betfair.pages.OxiXmlTest:reqAcctGetFreebets</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m118"></a><h2>betfair.pages.DbPublishTest:getEventDetailsFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m119"></a><h2>betfair.pages.OxiXmlTest:reqFreebetTrigger</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m120"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_VALUE_TOO_HIGH</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m121"></a><h2>betfair.pages.DbPublishTest:getResultsByEventHR</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m122"></a><h2>betfair.pages.OxiXmlTest:reqTransGetBetDetail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m123"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_PRICE_EMPTY</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m124"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_PRICE_CHANGED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m125"></a><h2>betfair.pages.OxiXmlTest:reqAccountAddStub</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m126"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_RESULTED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m127"></a><h2>betfair.pages.OxiXmlTest:reqUtilPing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m128"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_NOT_RESULTED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m129"></a><h2>betfair.pages.DbPublishTest:getTypesByClassHR</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m130"></a><h2>betfair.pages.DbPublishTest:getEventDetailsHR</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m131"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_BETABLE</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m132"></a><h2>betfair.pages.DbPublishTest:getResultsByEventFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m133"></a><h2>betfair.pages.DbPublishTest:getEventsHR</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m134"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_PRICE_NOT_PROVIDED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m135"></a><h2>betfair.pages.DbPublishTest:getOutcomeDetailsFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m136"></a><h2>betfair.pages.DbPublishTest:getClasses</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m137"></a><h2>betfair.pages.CashoutExceptions:reqBetCashout_CASHOUT_OUTCOME_HANDICAP_CHANGED</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m138"></a><h2>betfair.pages.ModifyEvents:modifyHorseRacingMarket</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m139"></a><h2>betfair.pages.WinLoseVoidTest:setResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m140"></a><h2>betfair.pages.FundsTransferEndToEndTest:fundsTransferEndtoEnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m141"></a><h2>betfair.pages.CreateEventsTest:createEnglishFootballEvent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m142"></a><h2>betfair.pages.ModifyEvents:modifyHorseRacingSelection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m143"></a><h2>betfair.pages.SearchCustomerTest:searchCustomerUsername</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m144"></a><h2>betfair.pages.ModifyEvents:modifyFootballMarket</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m145"></a><h2>betfair.pages.CreateEventsTest:createHorseRacingEvent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m146"></a><h2>betfair.pages.PlaceBetEndtoEndTest:placeBetEndtoEndFootball</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m147"></a><h2>betfair.pages.SearchCustomerTest:searchCustomerAccount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m148"></a><h2>betfair.pages.SearchBetTest:searchBetReceipt</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m149"></a><h2>betfair.pages.ModifyEvents:modifyFootballSelection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

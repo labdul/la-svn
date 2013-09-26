@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE oxip SYSTEM "oxip.dtd">
+<oxip version="6.0">
+	<request>
+		<reqClientAuth>
+			<user>{user}</user>
+			<password>{pass}</password>
+			<ssoid>{ssoid}</ssoid>
+		</reqClientAuth>
+		<reqBetBuild returnFreebetTokens="N">
+			<token/>
+			<errorDetail>ALL</errorDetail>
+			<channel>I</channel>
+			<outcomeGroup>
+				<betNo>1</betNo>
+				<outcome>{outcome}</outcome>
+			</outcomeGroup>
+		</reqBetBuild>
+	</request>
+</oxip>
