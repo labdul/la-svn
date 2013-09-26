@@ -1,0 +1,77 @@
+
+package laGroup;
+
+
+//import static org.junit.Assert.assertEquals;
+
+
+
+import junit.framework.TestCase;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.io.File;
+import java.io.IOException;
+
+public class RegistrationPageFieldValidations {
+	
+
+	 @RunWith(BlockJUnit4ClassRunner.class)
+	 public class ChromeTest extends TestCase {
+	 
+	   //private static ChromeDriverService service;
+	   private ChromeDriverService service;
+	   private WebDriver driver;
+	 
+	   @BeforeClass
+	   //public static void createAndStartService() {
+	   public void createAndStartService() throws IOException {
+	     service = new ChromeDriverService.Builder()
+	     	 //.usingChromeDriverExecutable(new File("C:\\Users\\lateef\\chromedriver.exe"))
+	         .usingDriverExecutable(new File("C:\\Users\\lateef\\chromedriver.exe"))
+	         .usingAnyFreePort()
+	         .build();
+	     service.start();
+	   }
+	 
+	   @AfterClass
+	   public void createAndStopService() {
+	     service.stop();
+	   }
+	 
+	   @Before
+	   public void createDriver() {
+	     driver = new RemoteWebDriver(service.getUrl(),
+	         DesiredCapabilities.chrome());
+	   }
+	 
+	   @After
+	   public void quitDriver() {
+	     driver.quit();
+	   }
+	 
+	   @Test
+	   public void testGoogleSearch() {
+	     driver.get("http://54.247.40.95/");
+	     
+	    // WebElement searchBox = driver.findElement(By.name("q"));
+	        
+	    // searchBox.sendKeys("webdriver");
+	     //searchBox.quit();
+	     //assertEquals("webdriver - Google Search", driver.getTitle());
+	     
+	     assertEquals("Fail: Wrong Title", "My Account" , driver.getTitle());
+	   }
+	 }
+	 
+
+}
