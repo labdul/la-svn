@@ -31,7 +31,7 @@ public class RegistraionPageValidations {
 	
 	@BeforeClass
 	public static void ClassInit(){
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\lateef\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\General\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
     //WebDriver driver = new FirefoxDriver();
 	
@@ -157,7 +157,7 @@ public class RegistraionPageValidations {
 		Logger.LogInfo("Clicked submit button");
 
 		//assert that deposit page is displayed
-		assertEquals("fail - Deposit page is not displayed", "true", DepositPage.isDepositPagedisplayed());
+		assertEquals("fail - Deposit page is not displayed ", "true", DepositPage.isDepositPagedisplayed());
 		
 	}
 }
