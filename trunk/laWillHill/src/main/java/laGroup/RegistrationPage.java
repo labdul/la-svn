@@ -43,7 +43,8 @@ public class RegistrationPage extends Page {
 
 		//myD.findElement(By.id("versionInfo")).getText())
 	
-	private final String classictemplateLocator = "//a[contains(@href,'#/signup/simple/simple-classic')]";
+//	private final String classictemplateLocator = "//a[contains(@href,'#/signup/simple/simple-classic')]";
+	private final String classictemplateLocator = "//a[contains(@href,'#/signup/simple-classic')]";
 	private final String versioninformationLocator = "versionInfo";
 	//private final String versioninformationLocator = "//*[@id='versionInfo']";
 	private final String titleLocator = "inputTitle";
@@ -51,9 +52,12 @@ public class RegistrationPage extends Page {
 	private final String firstnameLocator = "input-firstName";
 	//private final String firstnameLocator = "//input[contains(@id, 'input-firstName')]";
 	private final String lastnameLocator = "//input[contains(@id, 'input-lastName')]";
-	private final String DOBDayLocator = "//form/div/fieldset[3]/div/div/div/select"; 
-	private final String DOBMonthLocator = "//form/div/fieldset[3]/div/div/div[2]/select"; 
-	private final String DOBYearLocator = "//form/div/fieldset[3]/div/div/div[3]/select";
+	//private final String DOBDayLocator = "//form/div/fieldset[3]/div/div/div/select"; 
+	private final String DOBDayLocator = "select[ng-options='day for day in dates.days']";
+//	private final String DOBMonthLocator = "//form/div/fieldset[3]/div/div/div[2]/select";
+	private final String DOBMonthLocator = "select[ng-options='month.code as month.name for month in dates.months']";
+	
+	private final String DOBYearLocator = "birthdateselectoryear";
 	private final String emailaddressLocator = "//input[contains(@id, 'input-email')]";
 	private final String mobilenumberLocator = "//input[contains(@id, 'input-mobileNumber')]";
 	private final String countryLocator = "//select[contains(@id, 'input-country')]";
@@ -141,13 +145,13 @@ public class RegistrationPage extends Page {
 	@FindBy(how = How.XPATH, using = lastnameLocator)
 	private WebElement lastnamefieldElement;	
 	
-	@FindBy(how = How.XPATH, using = DOBDayLocator)
+	@FindBy(how = How.CSS, using = DOBDayLocator)
 	private WebElement DOBDayDropdownfieldElement;	
 	
-	@FindBy(how = How.XPATH, using = DOBMonthLocator)
+	@FindBy(how = How.CSS, using = DOBMonthLocator)
 	private WebElement DOBMonthDropdownfieldElement;	
 	
-	@FindBy(how = How.XPATH, using = DOBYearLocator)
+	@FindBy(how = How.NAME, using = DOBYearLocator)
 	private WebElement DOBYearDropdownfieldElement;	
 	
 	@FindBy(how = How.XPATH, using = emailaddressLocator)

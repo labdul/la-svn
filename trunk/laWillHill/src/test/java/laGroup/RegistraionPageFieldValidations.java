@@ -149,7 +149,7 @@ public class RegistraionPageFieldValidations {
 		RegistrationPage.acceptOffers();
 		Logger.LogInfo("Opted in to Offers");
 		
-		//Take screenshot . Note that thsis will display black blank screen when using chrome. Known bug as seen in 
+		//Take screenshot . Note that this will display black blank screen when using chrome. Known bug as seen in 
 		//the post http://code.google.com/p/chromedriver/issues/detail?id=294
 		Helpers.takeAScreenshot("Test2");
 		

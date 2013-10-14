@@ -36,8 +36,8 @@ public class RegistraionPageValidations {
     //WebDriver driver = new FirefoxDriver();
 	
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    //driver.get("http://54.247.40.95/");
-    driver.get("http://54.217.22.89/");    
+    driver.get("http://54.247.40.95/");
+    //driver.get("http://54.217.22.89/");    
     RegistrationPage = PageFactory.initElements(driver, RegistrationPage.class);
     Util = PageFactory.initElements(driver, Util.class);
     DepositPage = PageFactory.initElements(driver, DepositPage.class);
@@ -96,7 +96,7 @@ public class RegistraionPageValidations {
 		Logger.LogInfo("Entered lastname as: " + lastname);
 		Thread.sleep(1000);
 		RegistrationPage.enterDOBDay("03");
-		RegistrationPage.enterDOBMonth("05");
+		RegistrationPage.enterDOBMonth("July");
 		RegistrationPage.enterDOBYear("1980");
 		
 		
@@ -112,6 +112,7 @@ public class RegistraionPageValidations {
 		
 		RegistrationPage.enterfirstlineofmanualaddress(addressline1);
 		Logger.LogInfo("Entered address line1 as: " + addressline1);
+		Helpers.takeAScreenshot("Test1");
 		
 		
 		RegistrationPage.enterpostcode(postcode);
@@ -150,9 +151,10 @@ public class RegistraionPageValidations {
 		
 		//Take screenshot . Note that thsis will display black blank screen when using chrome. Known bug as seen in 
 		//the post http://code.google.com/p/chromedriver/issues/detail?id=294
-		Helpers.takeAScreenshot("Test2");
 		
 		Thread.sleep(1000);
+		Helpers.takeAScreenshot("Test2");
+		
 		RegistrationPage.clickSubmitButton();
 		Logger.LogInfo("Clicked submit button");
 
